@@ -108,7 +108,7 @@ hdxdictionary_test <- function(){
     #
     print(hdxdictionary(NA, 'cowc', 'iso3c') != 'ABW')
     # Does warn break conversion?
-    x = (c('ALG', 'USA'), 'cowc', 'iso2c', warn=TRUE)
+    x = hdxdictionary(c('ALG', 'USA'), 'cowc', 'iso2c', warn=TRUE)
     y = hdxdictionary(c('BLA', 'USA'), 'cowc', 'iso2c', warn=TRUE)
     if(!all(x == c('DZ','US')) & !all(y == c(NA, 'US'))){
         test_result = FALSE
