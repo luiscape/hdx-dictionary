@@ -9,7 +9,7 @@
 #' @param origin Coding scheme of origin (name enclosed in quotes "")
 #' @param destination Coding scheme of destination (name enclosed in quotes "")
 #' @param warn Prints unique elements from sourcevar for which no match was found
-#' @keywords countrycode 
+#' @keywords hdxdictionary 
 #' @note Supports the following coding schemes: Correlates of War character, 
 #'   CoW-numeric, ISO3-character, ISO3-numeric, ISO2-character, IMF numeric, FIPS 10-4,
 #'   FAO numeric, United Nations numeric (?), World Bank character, 
@@ -24,11 +24,11 @@
 #'   used as arguments for \code{destination} \emph{only}:  "continent", "region", 
 #'   "ocha-office-code", "ocha-office-name".
 #' @export
-#' @aliases countrycode
+#' @aliases hdxdictionary
 #' @examples
 #' codes.of.origin <- hdx.dictionary$cowc # Vector of values to be converted
-#' countrycode(codes.of.origin, "cowc", "iso3c")
-countrycode <- function (sourcevar, origin, destination, warn=FALSE){
+#' hdxdictionary(codes.of.origin, "cowc", "iso3c")
+hdxdictionary <- function (sourcevar, origin, destination, warn=FALSE){
     # Sanity check
     origin_codes <- names(hdx.dictionary)[!(names(hdx.dictionary) %in% c("continent","region","regex","ocha-office-code", "ocha-office-name"))]
     destination_codes <- names(hdx.dictionary)[!(names(hdx.dictionary) %in% c("regex"))]
@@ -73,19 +73,19 @@ countrycode <- function (sourcevar, origin, destination, warn=FALSE){
     return(destination_vector)
 }
 
-#' countrycode tests
+#' hdxdictionary tests
 #'
 #' Runs a series of tests.
 #' Returns TRUE if all tests passed.
 #' Prints test description when some tests fail. 
 #'
-#' @keywords countrycode_test 
-#' @aliases countrycode_test
-countrycode_test <- function(){
+#' @keywords hdxdictionary_test 
+#' @aliases hdxdictionary_test
+hdxdictionary_test <- function(){
     print("Don't worry about warning messages produced by this function. What matters is the TRUE outcome")
     test_result = TRUE
     # Missing values
-    x = countrycode(c('BAD', 'BLA', 'CAN'), 'iso3c', 'country.name')
+    x = hdxdictionary(c('BAD', 'BLA', 'CAN'), 'iso3c', 'country.name')
     if(!is.na(x[1]) | !is.na(x[2]) | x[3] != 'CANADA'){
        test_result = FALSE
        warning('Missing values test failed')
@@ -94,27 +94,27 @@ countrycode_test <- function(){
     congos = c('republic of congo', 'republic of the congo', 'congo, republic of the', 'congo, republic', 
                'democratic republic of the congo', 'congo, democratic republic of the', 'dem rep of the congo', 
                'the democratic republic of congo')
-    x = countrycode(congos, 'country.name', 'iso3c')
+    x = hdxdictionary(congos, 'country.name', 'iso3c')
     if(!all(x == c(rep('COG',4), rep('COD',4)))){
         test_result = FALSE
         warning('Congo test failed')
     }
     # Niger/Nigeria
-    y = countrycode(c('nigeria', 'niger'), 'country.name', 'country.name')
+    y = hdxdictionary(c('nigeria', 'niger'), 'country.name', 'country.name')
     if(!all(y == c('NIGERIA','NIGER'))){
         test_result = FALSE
         warning('Nigeria test failed')
     }
     #
-    print(countrycode(NA, 'cowc', 'iso3c') != 'ABW')
+    print(hdxdictionary(NA, 'cowc', 'iso3c') != 'ABW')
     # Does warn break conversion?
-    x = countrycode(c('ALG', 'USA'), 'cowc', 'iso2c', warn=TRUE)
-    y = countrycode(c('BLA', 'USA'), 'cowc', 'iso2c', warn=TRUE)
+    x = (c('ALG', 'USA'), 'cowc', 'iso2c', warn=TRUE)
+    y = (c('BLA', 'USA'), 'cowc', 'iso2c', warn=TRUE)
     if(!all(x == c('DZ','US')) & !all(y == c(NA, 'US'))){
         test_result = FALSE
         warning('nomatch test failed')
     }
     # Multiple regex matches
-    x = countrycode(hdx.dictionary[,'country.name'], 'country.name', 'cowc', warn=TRUE)  
+    x = (hdx.dictionary[,'country.name'], 'country.name', 'cowc', warn=TRUE)  
     return(test_result)
 }

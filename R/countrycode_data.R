@@ -1,7 +1,7 @@
 #' Country code translation data frame
 #' 
 #' A data frame with 144 observations on the following 23 variables.
-#' Used internally by the \code{countrycode()} function.
+#' Used internally by the \code{hdxdictionary()} function.
 #' 
 #' \itemize{
 #'   \item country.name: Long country name 
@@ -51,8 +51,8 @@
 #'     VIET NAM: cown 816, cowc DRV
 #' @docType data
 #' @keywords datasets
-#' @name countrycode_data 
-#' @usage countrycode_data
+#' @name hdx.dictionary
+#' @usage hdx.dictionary
 #' @format A data frame with 144 rows and 23 columns
 NULL
 
