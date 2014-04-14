@@ -1,0 +1,5908 @@
+
+
+
+
+
+<!DOCTYPE html>
+<html class="   ">
+  <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# object: http://ogp.me/ns/object# article: http://ogp.me/ns/article# profile: http://ogp.me/ns/profile#">
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    
+    <title>pycountrycode/countrycode/data/countrycode_data.csv at master · vincentarelbundock/pycountrycode</title>
+    <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="GitHub" />
+    <link rel="fluid-icon" href="https://github.com/fluidicon.png" title="GitHub" />
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-114.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-144.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144.png" />
+    <meta property="fb:app_id" content="1401488693436528"/>
+
+      <meta content="@github" name="twitter:site" /><meta content="summary" name="twitter:card" /><meta content="vincentarelbundock/pycountrycode" name="twitter:title" /><meta content="pycountrycode - Convert country codes and country names (python script)" name="twitter:description" /><meta content="https://avatars2.githubusercontent.com/u/987057?s=400" name="twitter:image:src" />
+<meta content="GitHub" property="og:site_name" /><meta content="object" property="og:type" /><meta content="https://avatars2.githubusercontent.com/u/987057?s=400" property="og:image" /><meta content="vincentarelbundock/pycountrycode" property="og:title" /><meta content="https://github.com/vincentarelbundock/pycountrycode" property="og:url" /><meta content="pycountrycode - Convert country codes and country names (python script)" property="og:description" />
+
+    <link rel="assets" href="https://github.global.ssl.fastly.net/">
+    <link rel="conduit-xhr" href="https://ghconduit.com:25035/">
+    <link rel="xhr-socket" href="/_sockets" />
+
+    <meta name="msapplication-TileImage" content="/windows-tile.png" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="selected-link" value="repo_source" data-pjax-transient />
+    <meta content="collector.githubapp.com" name="octolytics-host" /><meta content="collector-cdn.github.com" name="octolytics-script-host" /><meta content="github" name="octolytics-app-id" /><meta content="9D96C0ED:0206:5989BF4:534C5EF6" name="octolytics-dimension-request_id" /><meta content="953118" name="octolytics-actor-id" /><meta content="luiscape" name="octolytics-actor-login" /><meta content="70fa702f10a00fca4affcadd9509bba98533ac53e8c08a45672219668fa3ce22" name="octolytics-actor-hash" />
+    
+
+    
+    
+    <link rel="icon" type="image/x-icon" href="https://github.global.ssl.fastly.net/favicon.ico" />
+
+    <meta content="authenticity_token" name="csrf-param" />
+<meta content="eBvyJDVaqkEKZxtHoPQNOcQhX7lWeJ/W77GFq5kogAw=" name="csrf-token" />
+
+    <link href="https://github.global.ssl.fastly.net/assets/github-9bb53a970698e77802f98db076a34f260ae63ee3.css" media="all" rel="stylesheet" type="text/css" />
+    <link href="https://github.global.ssl.fastly.net/assets/github2-0b135754fa94322311412779b295ce8f054cad43.css" media="all" rel="stylesheet" type="text/css" />
+    
+
+
+        <script crossorigin="anonymous" src="https://github.global.ssl.fastly.net/assets/frameworks-28954a03feefcefacd684187f9478c307b78afe0.js" type="text/javascript"></script>
+        <script async="async" crossorigin="anonymous" src="https://github.global.ssl.fastly.net/assets/github-af26bb5f52f74f102ea3669eaa42c2973130c18c.js" type="text/javascript"></script>
+        
+        
+      <meta http-equiv="x-pjax-version" content="5a605c15d489068333ce6ae23968f602">
+
+        <link data-pjax-transient rel='permalink' href='/vincentarelbundock/pycountrycode/blob/2ba40b83b873ec6717187be9d9b746ff30c59119/countrycode/data/countrycode_data.csv'>
+
+  <meta name="description" content="pycountrycode - Convert country codes and country names (python script)" />
+
+  <meta content="987057" name="octolytics-dimension-user_id" /><meta content="vincentarelbundock" name="octolytics-dimension-user_login" /><meta content="6047723" name="octolytics-dimension-repository_id" /><meta content="vincentarelbundock/pycountrycode" name="octolytics-dimension-repository_nwo" /><meta content="true" name="octolytics-dimension-repository_public" /><meta content="false" name="octolytics-dimension-repository_is_fork" /><meta content="6047723" name="octolytics-dimension-repository_network_root_id" /><meta content="vincentarelbundock/pycountrycode" name="octolytics-dimension-repository_network_root_nwo" />
+  <link href="https://github.com/vincentarelbundock/pycountrycode/commits/master.atom" rel="alternate" title="Recent Commits to pycountrycode:master" type="application/atom+xml" />
+
+  </head>
+
+
+  <body class="logged_in  env-production macintosh vis-public page-blob">
+    <a href="#start-of-content" tabindex="1" class="accessibility-aid js-skip-to-content">Skip to content</a>
+    <div class="wrapper">
+      
+      
+      
+      
+
+
+      <div class="header header-logged-in true">
+  <div class="container clearfix">
+
+    <a class="header-logo-invertocat" href="https://github.com/">
+  <span class="mega-octicon octicon-mark-github"></span>
+</a>
+
+    
+    <a href="/notifications" aria-label="You have unread notifications" class="notification-indicator tooltipped tooltipped-s" data-gotokey="n">
+        <span class="mail-status unread"></span>
+</a>
+
+      <div class="command-bar js-command-bar  in-repository">
+          <form accept-charset="UTF-8" action="/search" class="command-bar-form" id="top_search_form" method="get">
+
+<div class="commandbar">
+  <span class="message"></span>
+  <input type="text" data-hotkey="/ s" name="q" id="js-command-bar-field" placeholder="Search or type a command" tabindex="1" autocapitalize="off"
+    
+    data-username="luiscape"
+      data-repo="vincentarelbundock/pycountrycode"
+      data-branch="master"
+      data-sha="05577cafa3c241ca7dff4750555fa5dd31306271"
+  >
+  <div class="display hidden"></div>
+</div>
+
+    <input type="hidden" name="nwo" value="vincentarelbundock/pycountrycode" />
+
+    <div class="select-menu js-menu-container js-select-menu search-context-select-menu">
+      <span class="minibutton select-menu-button js-menu-target" role="button" aria-haspopup="true">
+        <span class="js-select-button">This repository</span>
+      </span>
+
+      <div class="select-menu-modal-holder js-menu-content js-navigation-container" aria-hidden="true">
+        <div class="select-menu-modal">
+
+          <div class="select-menu-item js-navigation-item js-this-repository-navigation-item selected">
+            <span class="select-menu-item-icon octicon octicon-check"></span>
+            <input type="radio" class="js-search-this-repository" name="search_target" value="repository" checked="checked" />
+            <div class="select-menu-item-text js-select-button-text">This repository</div>
+          </div> <!-- /.select-menu-item -->
+
+          <div class="select-menu-item js-navigation-item js-all-repositories-navigation-item">
+            <span class="select-menu-item-icon octicon octicon-check"></span>
+            <input type="radio" name="search_target" value="global" />
+            <div class="select-menu-item-text js-select-button-text">All repositories</div>
+          </div> <!-- /.select-menu-item -->
+
+        </div>
+      </div>
+    </div>
+
+  <span class="help tooltipped tooltipped-s" aria-label="Show command bar help">
+    <span class="octicon octicon-question"></span>
+  </span>
+
+
+  <input type="hidden" name="ref" value="cmdform">
+
+</form>
+        <ul class="top-nav">
+          <li class="explore"><a href="/explore">Explore</a></li>
+            <li><a href="https://gist.github.com">Gist</a></li>
+            <li><a href="/blog">Blog</a></li>
+          <li><a href="https://help.github.com">Help</a></li>
+        </ul>
+      </div>
+
+    
+
+
+  <ul id="user-links">
+    <li>
+      <a href="/luiscape" class="name">
+        <img alt="Luis Capelo" class=" js-avatar" data-user="953118" height="20" src="https://avatars0.githubusercontent.com/u/953118?s=140" width="20" /> luiscape
+      </a>
+    </li>
+
+    <li class="new-menu dropdown-toggle js-menu-container">
+      <a href="#" class="js-menu-target tooltipped tooltipped-s" aria-label="Create new...">
+        <span class="octicon octicon-plus"></span>
+        <span class="dropdown-arrow"></span>
+      </a>
+
+      <div class="new-menu-content js-menu-content">
+      </div>
+    </li>
+
+    <li>
+      <a href="/settings/profile" id="account_settings"
+        class="tooltipped tooltipped-s"
+        aria-label="Account settings ">
+        <span class="octicon octicon-tools"></span>
+      </a>
+    </li>
+    <li>
+      <a class="tooltipped tooltipped-s" href="/logout" data-method="post" id="logout" aria-label="Sign out">
+        <span class="octicon octicon-log-out"></span>
+      </a>
+    </li>
+
+  </ul>
+
+<div class="js-new-dropdown-contents hidden">
+  
+
+<ul class="dropdown-menu">
+  <li>
+    <a href="/new"><span class="octicon octicon-repo-create"></span> New repository</a>
+  </li>
+  <li>
+    <a href="/organizations/new"><span class="octicon octicon-organization"></span> New organization</a>
+  </li>
+
+
+    <li class="section-title">
+      <span title="vincentarelbundock/pycountrycode">This repository</span>
+    </li>
+      <li>
+        <a href="/vincentarelbundock/pycountrycode/issues/new"><span class="octicon octicon-issue-opened"></span> New issue</a>
+      </li>
+</ul>
+
+</div>
+
+
+    
+  </div>
+</div>
+
+      
+
+        
+
+
+
+      <div id="start-of-content" class="accessibility-aid"></div>
+          <div class="site" itemscope itemtype="http://schema.org/WebPage">
+    
+    <div class="pagehead repohead instapaper_ignore readability-menu">
+      <div class="container">
+        
+
+<ul class="pagehead-actions">
+
+    <li class="subscription">
+      <form accept-charset="UTF-8" action="/notifications/subscribe" class="js-social-container" data-autosubmit="true" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="authenticity_token" type="hidden" value="eBvyJDVaqkEKZxtHoPQNOcQhX7lWeJ/W77GFq5kogAw=" /></div>  <input id="repository_id" name="repository_id" type="hidden" value="6047723" />
+
+    <div class="select-menu js-menu-container js-select-menu">
+      <a class="social-count js-social-count" href="/vincentarelbundock/pycountrycode/watchers">
+        1
+      </a>
+      <span class="minibutton select-menu-button with-count js-menu-target" role="button" tabindex="0" aria-haspopup="true">
+        <span class="js-select-button">
+          <span class="octicon octicon-eye-watch"></span>
+          Watch
+        </span>
+      </span>
+
+      <div class="select-menu-modal-holder">
+        <div class="select-menu-modal subscription-menu-modal js-menu-content" aria-hidden="true">
+          <div class="select-menu-header">
+            <span class="select-menu-title">Notification status</span>
+            <span class="octicon octicon-remove-close js-menu-close"></span>
+          </div> <!-- /.select-menu-header -->
+
+          <div class="select-menu-list js-navigation-container" role="menu">
+
+            <div class="select-menu-item js-navigation-item selected" role="menuitem" tabindex="0">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <div class="select-menu-item-text">
+                <input checked="checked" id="do_included" name="do" type="radio" value="included" />
+                <h4>Not watching</h4>
+                <span class="description">You only receive notifications for conversations in which you participate or are @mentioned.</span>
+                <span class="js-select-button-text hidden-select-button-text">
+                  <span class="octicon octicon-eye-watch"></span>
+                  Watch
+                </span>
+              </div>
+            </div> <!-- /.select-menu-item -->
+
+            <div class="select-menu-item js-navigation-item " role="menuitem" tabindex="0">
+              <span class="select-menu-item-icon octicon octicon octicon-check"></span>
+              <div class="select-menu-item-text">
+                <input id="do_subscribed" name="do" type="radio" value="subscribed" />
+                <h4>Watching</h4>
+                <span class="description">You receive notifications for all conversations in this repository.</span>
+                <span class="js-select-button-text hidden-select-button-text">
+                  <span class="octicon octicon-eye-unwatch"></span>
+                  Unwatch
+                </span>
+              </div>
+            </div> <!-- /.select-menu-item -->
+
+            <div class="select-menu-item js-navigation-item " role="menuitem" tabindex="0">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <div class="select-menu-item-text">
+                <input id="do_ignore" name="do" type="radio" value="ignore" />
+                <h4>Ignoring</h4>
+                <span class="description">You do not receive any notifications for conversations in this repository.</span>
+                <span class="js-select-button-text hidden-select-button-text">
+                  <span class="octicon octicon-mute"></span>
+                  Stop ignoring
+                </span>
+              </div>
+            </div> <!-- /.select-menu-item -->
+
+          </div> <!-- /.select-menu-list -->
+
+        </div> <!-- /.select-menu-modal -->
+      </div> <!-- /.select-menu-modal-holder -->
+    </div> <!-- /.select-menu -->
+
+</form>
+    </li>
+
+  <li>
+  
+
+  <div class="js-toggler-container js-social-container starring-container ">
+    <a href="/vincentarelbundock/pycountrycode/unstar"
+      class="minibutton with-count js-toggler-target star-button starred"
+      aria-label="Unstar this repository" title="Unstar vincentarelbundock/pycountrycode" data-remote="true" data-method="post" rel="nofollow">
+      <span class="octicon octicon-star-delete"></span><span class="text">Unstar</span>
+    </a>
+
+    <a href="/vincentarelbundock/pycountrycode/star"
+      class="minibutton with-count js-toggler-target star-button unstarred"
+      aria-label="Star this repository" title="Star vincentarelbundock/pycountrycode" data-remote="true" data-method="post" rel="nofollow">
+      <span class="octicon octicon-star"></span><span class="text">Star</span>
+    </a>
+
+      <a class="social-count js-social-count" href="/vincentarelbundock/pycountrycode/stargazers">
+        1
+      </a>
+  </div>
+
+  </li>
+
+
+        <li>
+          <a href="/vincentarelbundock/pycountrycode/fork" class="minibutton with-count js-toggler-target fork-button lighter tooltipped-n" title="Fork your own copy of vincentarelbundock/pycountrycode to your account" aria-label="Fork your own copy of vincentarelbundock/pycountrycode to your account" rel="facebox nofollow">
+            <span class="octicon octicon-git-branch-create"></span><span class="text">Fork</span>
+          </a>
+          <a href="/vincentarelbundock/pycountrycode/network" class="social-count">4</a>
+        </li>
+
+
+</ul>
+
+        <h1 itemscope itemtype="http://data-vocabulary.org/Breadcrumb" class="entry-title public">
+          <span class="repo-label"><span>public</span></span>
+          <span class="mega-octicon octicon-repo"></span>
+          <span class="author"><a href="/vincentarelbundock" class="url fn" itemprop="url" rel="author"><span itemprop="title">vincentarelbundock</span></a></span><!--
+       --><span class="path-divider">/</span><!--
+       --><strong><a href="/vincentarelbundock/pycountrycode" class="js-current-repository js-repo-home-link">pycountrycode</a></strong>
+
+          <span class="page-context-loader">
+            <img alt="Octocat-spinner-32" height="16" src="https://github.global.ssl.fastly.net/images/spinners/octocat-spinner-32.gif" width="16" />
+          </span>
+
+        </h1>
+      </div><!-- /.container -->
+    </div><!-- /.repohead -->
+
+    <div class="container">
+      <div class="repository-with-sidebar repo-container new-discussion-timeline js-new-discussion-timeline  ">
+        <div class="repository-sidebar clearfix">
+            
+
+<div class="sunken-menu vertical-right repo-nav js-repo-nav js-repository-container-pjax js-octicon-loaders">
+  <div class="sunken-menu-contents">
+    <ul class="sunken-menu-group">
+      <li class="tooltipped tooltipped-w" aria-label="Code">
+        <a href="/vincentarelbundock/pycountrycode" aria-label="Code" class="selected js-selected-navigation-item sunken-menu-item" data-gotokey="c" data-pjax="true" data-selected-links="repo_source repo_downloads repo_commits repo_tags repo_branches /vincentarelbundock/pycountrycode">
+          <span class="octicon octicon-code"></span> <span class="full-word">Code</span>
+          <img alt="Octocat-spinner-32" class="mini-loader" height="16" src="https://github.global.ssl.fastly.net/images/spinners/octocat-spinner-32.gif" width="16" />
+</a>      </li>
+
+        <li class="tooltipped tooltipped-w" aria-label="Issues">
+          <a href="/vincentarelbundock/pycountrycode/issues" aria-label="Issues" class="js-selected-navigation-item sunken-menu-item js-disable-pjax" data-gotokey="i" data-selected-links="repo_issues /vincentarelbundock/pycountrycode/issues">
+            <span class="octicon octicon-issue-opened"></span> <span class="full-word">Issues</span>
+            <span class='counter'>3</span>
+            <img alt="Octocat-spinner-32" class="mini-loader" height="16" src="https://github.global.ssl.fastly.net/images/spinners/octocat-spinner-32.gif" width="16" />
+</a>        </li>
+
+      <li class="tooltipped tooltipped-w" aria-label="Pull Requests">
+        <a href="/vincentarelbundock/pycountrycode/pulls" aria-label="Pull Requests" class="js-selected-navigation-item sunken-menu-item js-disable-pjax" data-gotokey="p" data-selected-links="repo_pulls /vincentarelbundock/pycountrycode/pulls">
+            <span class="octicon octicon-git-pull-request"></span> <span class="full-word">Pull Requests</span>
+            <span class='counter'>2</span>
+            <img alt="Octocat-spinner-32" class="mini-loader" height="16" src="https://github.global.ssl.fastly.net/images/spinners/octocat-spinner-32.gif" width="16" />
+</a>      </li>
+
+
+        <li class="tooltipped tooltipped-w" aria-label="Wiki">
+          <a href="/vincentarelbundock/pycountrycode/wiki" aria-label="Wiki" class="js-selected-navigation-item sunken-menu-item" data-pjax="true" data-selected-links="repo_wiki /vincentarelbundock/pycountrycode/wiki">
+            <span class="octicon octicon-book"></span> <span class="full-word">Wiki</span>
+            <img alt="Octocat-spinner-32" class="mini-loader" height="16" src="https://github.global.ssl.fastly.net/images/spinners/octocat-spinner-32.gif" width="16" />
+</a>        </li>
+    </ul>
+    <div class="sunken-menu-separator"></div>
+    <ul class="sunken-menu-group">
+
+      <li class="tooltipped tooltipped-w" aria-label="Pulse">
+        <a href="/vincentarelbundock/pycountrycode/pulse" aria-label="Pulse" class="js-selected-navigation-item sunken-menu-item" data-pjax="true" data-selected-links="pulse /vincentarelbundock/pycountrycode/pulse">
+          <span class="octicon octicon-pulse"></span> <span class="full-word">Pulse</span>
+          <img alt="Octocat-spinner-32" class="mini-loader" height="16" src="https://github.global.ssl.fastly.net/images/spinners/octocat-spinner-32.gif" width="16" />
+</a>      </li>
+
+      <li class="tooltipped tooltipped-w" aria-label="Graphs">
+        <a href="/vincentarelbundock/pycountrycode/graphs" aria-label="Graphs" class="js-selected-navigation-item sunken-menu-item" data-pjax="true" data-selected-links="repo_graphs repo_contributors /vincentarelbundock/pycountrycode/graphs">
+          <span class="octicon octicon-graph"></span> <span class="full-word">Graphs</span>
+          <img alt="Octocat-spinner-32" class="mini-loader" height="16" src="https://github.global.ssl.fastly.net/images/spinners/octocat-spinner-32.gif" width="16" />
+</a>      </li>
+
+      <li class="tooltipped tooltipped-w" aria-label="Network">
+        <a href="/vincentarelbundock/pycountrycode/network" aria-label="Network" class="js-selected-navigation-item sunken-menu-item js-disable-pjax" data-selected-links="repo_network /vincentarelbundock/pycountrycode/network">
+          <span class="octicon octicon-git-branch"></span> <span class="full-word">Network</span>
+          <img alt="Octocat-spinner-32" class="mini-loader" height="16" src="https://github.global.ssl.fastly.net/images/spinners/octocat-spinner-32.gif" width="16" />
+</a>      </li>
+    </ul>
+
+
+  </div>
+</div>
+
+              <div class="only-with-full-nav">
+                
+
+  
+
+<div class="clone-url open"
+  data-protocol-type="http"
+  data-url="/users/set_protocol?protocol_selector=http&amp;protocol_type=clone">
+  <h3><strong>HTTPS</strong> clone URL</h3>
+  <div class="clone-url-box">
+    <input type="text" class="clone js-url-field"
+           value="https://github.com/vincentarelbundock/pycountrycode.git" readonly="readonly">
+
+    <span aria-label="copy to clipboard" class="js-zeroclipboard url-box-clippy minibutton zeroclipboard-button" data-clipboard-text="https://github.com/vincentarelbundock/pycountrycode.git" data-copied-hint="copied!"><span class="octicon octicon-clippy"></span></span>
+  </div>
+</div>
+
+  
+
+<div class="clone-url "
+  data-protocol-type="ssh"
+  data-url="/users/set_protocol?protocol_selector=ssh&amp;protocol_type=clone">
+  <h3><strong>SSH</strong> clone URL</h3>
+  <div class="clone-url-box">
+    <input type="text" class="clone js-url-field"
+           value="git@github.com:vincentarelbundock/pycountrycode.git" readonly="readonly">
+
+    <span aria-label="copy to clipboard" class="js-zeroclipboard url-box-clippy minibutton zeroclipboard-button" data-clipboard-text="git@github.com:vincentarelbundock/pycountrycode.git" data-copied-hint="copied!"><span class="octicon octicon-clippy"></span></span>
+  </div>
+</div>
+
+  
+
+<div class="clone-url "
+  data-protocol-type="subversion"
+  data-url="/users/set_protocol?protocol_selector=subversion&amp;protocol_type=clone">
+  <h3><strong>Subversion</strong> checkout URL</h3>
+  <div class="clone-url-box">
+    <input type="text" class="clone js-url-field"
+           value="https://github.com/vincentarelbundock/pycountrycode" readonly="readonly">
+
+    <span aria-label="copy to clipboard" class="js-zeroclipboard url-box-clippy minibutton zeroclipboard-button" data-clipboard-text="https://github.com/vincentarelbundock/pycountrycode" data-copied-hint="copied!"><span class="octicon octicon-clippy"></span></span>
+  </div>
+</div>
+
+
+<p class="clone-options">You can clone with
+      <a href="#" class="js-clone-selector" data-protocol="http">HTTPS</a>,
+      <a href="#" class="js-clone-selector" data-protocol="ssh">SSH</a>,
+      or <a href="#" class="js-clone-selector" data-protocol="subversion">Subversion</a>.
+  <span class="help tooltipped tooltipped-n" aria-label="Get help on which URL is right for you.">
+    <a href="https://help.github.com/articles/which-remote-url-should-i-use">
+    <span class="octicon octicon-question"></span>
+    </a>
+  </span>
+</p>
+
+  <a href="http://mac.github.com" data-url="github-mac://openRepo/https://github.com/vincentarelbundock/pycountrycode" class="minibutton sidebar-button js-conduit-rewrite-url" title="Save vincentarelbundock/pycountrycode to your computer and use it in GitHub Desktop." aria-label="Save vincentarelbundock/pycountrycode to your computer and use it in GitHub Desktop.">
+    <span class="octicon octicon-device-desktop"></span>
+    Clone in Desktop
+  </a>
+
+
+                <a href="/vincentarelbundock/pycountrycode/archive/master.zip"
+                   class="minibutton sidebar-button"
+                   aria-label="Download vincentarelbundock/pycountrycode as a zip file"
+                   title="Download vincentarelbundock/pycountrycode as a zip file"
+                   rel="nofollow">
+                  <span class="octicon octicon-cloud-download"></span>
+                  Download ZIP
+                </a>
+              </div>
+        </div><!-- /.repository-sidebar -->
+
+        <div id="js-repo-pjax-container" class="repository-content context-loader-container" data-pjax-container>
+          
+
+
+<!-- blob contrib key: blob_contributors:v21:48147018c17782f45f9633c9eeade406 -->
+
+<p title="This is a placeholder element" class="js-history-link-replace hidden"></p>
+
+<a href="/vincentarelbundock/pycountrycode/find/master" data-pjax data-hotkey="t" class="js-show-file-finder" style="display:none">Show File Finder</a>
+
+<div class="file-navigation">
+  
+
+<div class="select-menu js-menu-container js-select-menu" >
+  <span class="minibutton select-menu-button js-menu-target" data-hotkey="w"
+    data-master-branch="master"
+    data-ref="master"
+    role="button" aria-label="Switch branches or tags" tabindex="0" aria-haspopup="true">
+    <span class="octicon octicon-git-branch"></span>
+    <i>branch:</i>
+    <span class="js-select-button">master</span>
+  </span>
+
+  <div class="select-menu-modal-holder js-menu-content js-navigation-container" data-pjax aria-hidden="true">
+
+    <div class="select-menu-modal">
+      <div class="select-menu-header">
+        <span class="select-menu-title">Switch branches/tags</span>
+        <span class="octicon octicon-remove-close js-menu-close"></span>
+      </div> <!-- /.select-menu-header -->
+
+      <div class="select-menu-filters">
+        <div class="select-menu-text-filter">
+          <input type="text" aria-label="Filter branches/tags" id="context-commitish-filter-field" class="js-filterable-field js-navigation-enable" placeholder="Filter branches/tags">
+        </div>
+        <div class="select-menu-tabs">
+          <ul>
+            <li class="select-menu-tab">
+              <a href="#" data-tab-filter="branches" class="js-select-menu-tab">Branches</a>
+            </li>
+            <li class="select-menu-tab">
+              <a href="#" data-tab-filter="tags" class="js-select-menu-tab">Tags</a>
+            </li>
+          </ul>
+        </div><!-- /.select-menu-tabs -->
+      </div><!-- /.select-menu-filters -->
+
+      <div class="select-menu-list select-menu-tab-bucket js-select-menu-tab-bucket" data-tab-filter="branches">
+
+        <div data-filterable-for="context-commitish-filter-field" data-filterable-type="substring">
+
+
+            <div class="select-menu-item js-navigation-item selected">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/vincentarelbundock/pycountrycode/blob/master/countrycode/data/countrycode_data.csv"
+                 data-name="master"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text js-select-button-text css-truncate-target"
+                 title="master">master</a>
+            </div> <!-- /.select-menu-item -->
+        </div>
+
+          <div class="select-menu-no-results">Nothing to show</div>
+      </div> <!-- /.select-menu-list -->
+
+      <div class="select-menu-list select-menu-tab-bucket js-select-menu-tab-bucket" data-tab-filter="tags">
+        <div data-filterable-for="context-commitish-filter-field" data-filterable-type="substring">
+
+
+        </div>
+
+        <div class="select-menu-no-results">Nothing to show</div>
+      </div> <!-- /.select-menu-list -->
+
+    </div> <!-- /.select-menu-modal -->
+  </div> <!-- /.select-menu-modal-holder -->
+</div> <!-- /.select-menu -->
+
+  <div class="breadcrumb">
+    <span class='repo-root js-repo-root'><span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="/vincentarelbundock/pycountrycode" data-branch="master" data-direction="back" data-pjax="true" itemscope="url"><span itemprop="title">pycountrycode</span></a></span></span><span class="separator"> / </span><span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="/vincentarelbundock/pycountrycode/tree/master/countrycode" data-branch="master" data-direction="back" data-pjax="true" itemscope="url"><span itemprop="title">countrycode</span></a></span><span class="separator"> / </span><span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="/vincentarelbundock/pycountrycode/tree/master/countrycode/data" data-branch="master" data-direction="back" data-pjax="true" itemscope="url"><span itemprop="title">data</span></a></span><span class="separator"> / </span><strong class="final-path">countrycode_data.csv</strong> <span aria-label="copy to clipboard" class="js-zeroclipboard minibutton zeroclipboard-button" data-clipboard-text="countrycode/data/countrycode_data.csv" data-copied-hint="copied!"><span class="octicon octicon-clippy"></span></span>
+  </div>
+</div>
+
+
+  <div class="commit file-history-tease">
+    <img alt="Christopher Gandrud" class="main-avatar js-avatar" data-user="1285805" height="24" src="https://avatars2.githubusercontent.com/u/1285805?s=140" width="24" />
+    <span class="author"><a href="/christophergandrud" rel="author">christophergandrud</a></span>
+    <time class="js-relative-date" data-title-format="YYYY-MM-DD HH:mm:ss" datetime="2014-02-12T17:11:17+01:00" title="2014-02-12 11:11:17">February 12, 2014</time>
+    <div class="commit-title">
+        <a href="/vincentarelbundock/pycountrycode/commit/d01ab39ffe971123067fe40928ebb8003c21f26c" class="message" data-pjax="true" title="Avoids confusion with Eq Guinea">Avoids confusion with Eq Guinea</a>
+    </div>
+
+    <div class="participation">
+      <p class="quickstat"><a href="#blob_contributors_box" rel="facebox"><strong>2</strong>  contributors</a></p>
+          <a class="avatar tooltipped tooltipped-s" aria-label="vincentarelbundock" href="/vincentarelbundock/pycountrycode/commits/master/countrycode/data/countrycode_data.csv?author=vincentarelbundock"><img alt="Vincent Arel-Bundock" class=" js-avatar" data-user="987057" height="20" src="https://avatars1.githubusercontent.com/u/987057?s=140" width="20" /></a>
+    <a class="avatar tooltipped tooltipped-s" aria-label="christophergandrud" href="/vincentarelbundock/pycountrycode/commits/master/countrycode/data/countrycode_data.csv?author=christophergandrud"><img alt="Christopher Gandrud" class=" js-avatar" data-user="1285805" height="20" src="https://avatars2.githubusercontent.com/u/1285805?s=140" width="20" /></a>
+
+
+    </div>
+    <div id="blob_contributors_box" style="display:none">
+      <h2 class="facebox-header">Users who have contributed to this file</h2>
+      <ul class="facebox-user-list">
+          <li class="facebox-user-list-item">
+            <img alt="Vincent Arel-Bundock" class=" js-avatar" data-user="987057" height="24" src="https://avatars1.githubusercontent.com/u/987057?s=140" width="24" />
+            <a href="/vincentarelbundock">vincentarelbundock</a>
+          </li>
+          <li class="facebox-user-list-item">
+            <img alt="Christopher Gandrud" class=" js-avatar" data-user="1285805" height="24" src="https://avatars2.githubusercontent.com/u/1285805?s=140" width="24" />
+            <a href="/christophergandrud">christophergandrud</a>
+          </li>
+      </ul>
+    </div>
+  </div>
+
+<div class="file-box">
+  <div class="file">
+    <div class="meta clearfix">
+      <div class="info file-name">
+        <span class="icon"><b class="octicon octicon-file-text"></b></span>
+        <span class="mode" title="File Mode">file</span>
+        <span class="meta-divider"></span>
+          <span>274 lines (273 sloc)</span>
+          <span class="meta-divider"></span>
+        <span>22.432 kb</span>
+      </div>
+      <div class="actions">
+        <div class="button-group">
+            <a class="minibutton tooltipped tooltipped-w js-conduit-openfile-check"
+               href="http://mac.github.com"
+               data-url="github-mac://openRepo/https://github.com/vincentarelbundock/pycountrycode?branch=master&amp;filepath=countrycode%2Fdata%2Fcountrycode_data.csv"
+               aria-label="Open this file in GitHub for Mac"
+               data-failed-title="Your version of GitHub for Mac is too old to open this file. Try checking for updates.">
+                <span class="octicon octicon-device-desktop"></span> Open
+            </a>
+                <a class="minibutton tooltipped tooltipped-n js-update-url-with-hash"
+                   aria-label="Clicking this button will automatically fork this project so you can edit the file"
+                   href="/vincentarelbundock/pycountrycode/edit/master/countrycode/data/countrycode_data.csv"
+                   data-method="post" rel="nofollow">Edit</a>
+          <a href="/vincentarelbundock/pycountrycode/raw/master/countrycode/data/countrycode_data.csv" class="button minibutton " id="raw-url">Raw</a>
+            <a href="/vincentarelbundock/pycountrycode/blame/master/countrycode/data/countrycode_data.csv" class="button minibutton js-update-url-with-hash">Blame</a>
+          <a href="/vincentarelbundock/pycountrycode/commits/master/countrycode/data/countrycode_data.csv" class="button minibutton " rel="nofollow">History</a>
+        </div><!-- /.button-group -->
+
+            <a class="minibutton danger empty-icon tooltipped tooltipped-s"
+               href="/vincentarelbundock/pycountrycode/delete/master/countrycode/data/countrycode_data.csv"
+               aria-label="Fork this project and delete file"
+               data-method="post" data-test-id="delete-blob-file" rel="nofollow">
+
+          Delete
+        </a>
+      </div><!-- /.actions -->
+    </div>
+        <div class="blob-wrapper data type-text js-blob-data">
+      
+<div class="blob-interaction-bar">
+  <span class="octicon octicon-search"></span>
+  <input type="text" name="filter" class="js-csv-filter-field blob-filter" placeholder="Search this file..." autocapitalize="off" />
+</div>
+
+<div class="markdown-body csv">
+  <div class="markdown-body csv-body">
+    <table class="js-csv-data csv-data">
+      <thead>
+        <tr id="LC1" class="line">
+          <td class="blob-line-nums csv-row-num">
+            <span id="L1" rel="#L1>">1</span>
+          </td>
+          <th>country_name</th>
+          <th>cowc</th>
+          <th>cown</th>
+          <th>fao</th>
+          <th>fips104</th>
+          <th>imf</th>
+          <th>iso2c</th>
+          <th>iso3c</th>
+          <th>iso3n</th>
+          <th>un</th>
+          <th>wb</th>
+          <th>regex</th>
+          <th>continent</th>
+          <th>region</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr id="LC2" class="line">
+          <td class="blob-line-nums csv-row-num">
+            <span id="L2">2</span>
+          </td>
+          <td>Afghanistan</td>
+          <td>AFG</td>
+          <td>700</td>
+          <td>2</td>
+          <td>AF</td>
+          <td>512</td>
+          <td>AF</td>
+          <td>AFG</td>
+          <td>4</td>
+          <td>4</td>
+          <td>AFG</td>
+          <td>.*afghanistan.*</td>
+          <td>Asia</td>
+          <td>Southern Asia</td>
+        </tr>
+        <tr id="LC3" class="line">
+          <td class="blob-line-nums csv-row-num">
+            <span id="L3">3</span>
+          </td>
+          <td>Aland Islands</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>AX</td>
+          <td>ALA</td>
+          <td>248</td>
+          <td>248</td>
+          <td>ALA</td>
+          <td>.*(?&lt;!new ze)aland.*</td>
+          <td>Europe</td>
+          <td>Northern Europe</td>
+        </tr>
+        <tr id="LC4" class="line">
+          <td class="blob-line-nums csv-row-num">
+            <span id="L4">4</span>
+          </td>
+          <td>Albania</td>
+          <td>ALB</td>
+          <td>339</td>
+          <td>3</td>
+          <td>AL</td>
+          <td>914</td>
+          <td>AL</td>
+          <td>ALB</td>
+          <td>8</td>
+          <td>8</td>
+          <td>ALB</td>
+          <td>.*albania.*</td>
+          <td>Europe</td>
+          <td>Southern Europe</td>
+        </tr>
+        <tr id="LC5" class="line">
+          <td class="blob-line-nums csv-row-num">
+            <span id="L5">5</span>
+          </td>
+          <td>Algeria</td>
+          <td>ALG</td>
+          <td>615</td>
+          <td>4</td>
+          <td>AG</td>
+          <td>612</td>
+          <td>DZ</td>
+          <td>DZA</td>
+          <td>12</td>
+          <td>12</td>
+          <td>DZA</td>
+          <td>.*algeria.*</td>
+          <td>Africa</td>
+          <td>Northern Africa</td>
+        </tr>
+        <tr id="LC6" class="line">
+          <td class="blob-line-nums csv-row-num">
+            <span id="L6">6</span>
+          </td>
+          <td>American Samoa</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>AS</td>
+          <td>859</td>
+          <td>AS</td>
+          <td>ASM</td>
+          <td>16</td>
+          <td>16</td>
+          <td>ASM</td>
+          <td>.*americ.*samoa.*|.*samoa.*americ.*</td>
+          <td>Oceania</td>
+          <td>Polynesia</td>
+        </tr>
+        <tr id="LC7" class="line">
+          <td class="blob-line-nums csv-row-num">
+            <span id="L7">7</span>
+          </td>
+          <td>Andorra</td>
+          <td>AND</td>
+          <td>232</td>
+          <td>6</td>
+          <td>AN</td>
+          <td></td>
+          <td>AD</td>
+          <td>AND</td>
+          <td>20</td>
+          <td>20</td>
+          <td>ADO</td>
+          <td>.*andorra.*</td>
+          <td>Europe</td>
+          <td>Southern Europe</td>
+        </tr>
+        <tr id="LC8" class="line">
+          <td class="blob-line-nums csv-row-num">
+            <span id="L8">8</span>
+          </td>
+          <td>Angola</td>
+          <td>ANG</td>
+          <td>540</td>
+          <td>7</td>
+          <td>AO</td>
+          <td>614</td>
+          <td>AO</td>
+          <td>AGO</td>
+          <td>24</td>
+          <td>24</td>
+          <td>AGO</td>
+          <td>.*angola.*</td>
+          <td>Africa</td>
+          <td>Middle Africa</td>
+        </tr>
+        <tr id="LC9" class="line">
+          <td class="blob-line-nums csv-row-num">
+            <span id="L9">9</span>
+          </td>
+          <td>Anguilla</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>AV</td>
+          <td>312</td>
+          <td>AI</td>
+          <td>AIA</td>
+          <td>660</td>
+          <td>660</td>
+          <td>AIA</td>
+          <td>.*anguilla.*</td>
+          <td>Americas</td>
+          <td>Caribbean</td>
+        </tr>
+        <tr id="LC10" class="line">
+          <td class="blob-line-nums csv-row-num">
+            <span id="L10">10</span>
+          </td>
+          <td>Antarctica</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>AY</td>
+          <td></td>
+          <td>AQ</td>
+          <td>ATA</td>
+          <td>10</td>
+          <td></td>
+          <td>ATA</td>
+          <td>.*antarctica.*</td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr id="LC11" class="line">
+          <td class="blob-line-nums csv-row-num">
+            <span id="L11">11</span>
+          </td>
+          <td>Antigua And Barbuda</td>
+          <td>AAB</td>
+          <td>58</td>
+          <td>8</td>
+          <td>AC</td>
+          <td>311</td>
+          <td>AG</td>
+          <td>ATG</td>
+          <td>28</td>
+          <td>28</td>
+          <td>ATG</td>
+          <td>.*antigua.*</td>
+          <td>Americas</td>
+          <td>Caribbean</td>
+        </tr>
+        <tr id="LC12" class="line">
+          <td class="blob-line-nums csv-row-num">
+            <span id="L12">12</span>
+          </td>
+          <td>Argentina</td>
+          <td>ARG</td>
+          <td>160</td>
+          <td>9</td>
+          <td>AR</td>
+          <td>213</td>
+          <td>AR</td>
+          <td>ARG</td>
+          <td>32</td>
+          <td>32</td>
+          <td>ARG</td>
+          <td>.*argentina.*</td>
+          <td>Americas</td>
+          <td>South America</td>
+        </tr>
+        <tr id="LC13" class="line">
+          <td class="blob-line-nums csv-row-num">
+            <span id="L13">13</span>
+          </td>
+          <td>Armenia</td>
+          <td>ARM</td>
+          <td>371</td>
+          <td>1</td>
+          <td>AM</td>
+          <td>911</td>
+          <td>AM</td>
+          <td>ARM</td>
+          <td>51</td>
+          <td>51</td>
+          <td>ARM</td>
+          <td>.*armenia.*</td>
+          <td>Asia</td>
+          <td>Western Asia</td>
+        </tr>
+        <tr id="LC14" class="line">
+          <td class="blob-line-nums csv-row-num">
+            <span id="L14">14</span>
+          </td>
+          <td>Aruba</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>AA</td>
+          <td>314</td>
+          <td>AW</td>
+          <td>ABW</td>
+          <td>533</td>
+          <td>533</td>
+          <td>ABW</td>
+          <td>.*aruba.*</td>
+          <td>Americas</td>
+          <td>Caribbean</td>
+        </tr>
+        <tr id="LC15" class="line">
+          <td class="blob-line-nums csv-row-num">
+            <span id="L15">15</span>
+          </td>
+          <td>Australia</td>
+          <td>AUL</td>
+          <td>900</td>
+          <td>10</td>
+          <td>AS</td>
+          <td>193</td>
+          <td>AU</td>
+          <td>AUS</td>
+          <td>36</td>
+          <td>36</td>
+          <td>AUS</td>
+          <td>.*australia.*</td>
+          <td>Oceania</td>
+          <td>Australia and New Zealand</td>
+        </tr>
+        <tr id="LC16" class="line">
+          <td class="blob-line-nums csv-row-num">
+            <span id="L16">16</span>
+          </td>
+          <td>Austria</td>
+          <td>AUS</td>
+          <td>305</td>
+          <td>11</td>
+          <td>AU</td>
+          <td>122</td>
+          <td>AT</td>
+          <td>AUT</td>
+          <td>40</td>
+          <td>40</td>
+          <td>AUT</td>
+          <td>.*austria.*|.*aust.*emp.*</td>
+          <td>Europe</td>
+          <td>Western Europe</td>
+        </tr>
+        <tr id="LC17" class="line">
+          <td class="blob-line-nums csv-row-num">
+            <span id="L17">17</span>
+          </td>
+          <td>Austria-Hungary</td>
+          <td>AUH</td>
+          <td>300</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr id="LC18" class="line">
+          <td class="blob-line-nums csv-row-num">
+            <span id="L18">18</span>
+          </td>
+          <td>Azerbaijan</td>
+          <td>AZE</td>
+          <td>373</td>
+          <td>52</td>
+          <td>AJ</td>
+          <td>912</td>
+          <td>AZ</td>
+          <td>AZE</td>
+          <td>31</td>
+          <td>31</td>
+          <td>AZE</td>
+          <td>.*azerbaijan.*</td>
+          <td>Asia</td>
+          <td>Western Asia</td>
+        </tr>
+        <tr id="LC19" class="line">
+          <td class="blob-line-nums csv-row-num">
+            <span id="L19">19</span>
+          </td>
+          <td>Baden</td>
+          <td>BAD</td>
+          <td>267</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr id="LC20" class="line">
+          <td class="blob-line-nums csv-row-num">
+            <span id="L20">20</span>
+          </td>
+          <td>Bahamas</td>
+          <td>BHM</td>
+          <td>31</td>
+          <td>12</td>
+          <td>BF</td>
+          <td>313</td>
+          <td>BS</td>
+          <td>BHS</td>
+          <td>44</td>
+          <td>44</td>
+          <td>BHS</td>
+          <td>.*ahamas.*</td>
+          <td>Americas</td>
+          <td>Caribbean</td>
+        </tr>
+        <tr id="LC21" class="line">
+          <td class="blob-line-nums csv-row-num">
+            <span id="L21">21</span>
+          </td>
+          <td>Bahrain</td>
+          <td>BAH</td>
+          <td>692</td>
+          <td>13</td>
+          <td>BA</td>
+          <td>419</td>
+          <td>BH</td>
+          <td>BHR</td>
+          <td>48</td>
+          <td>48</td>
+          <td>BHR</td>
+          <td>.*bahrain.*</td>
+          <td>Asia</td>
+          <td>Western Asia</td>
+        </tr>
+        <tr id="LC22" class="line">
+          <td class="blob-line-nums csv-row-num">
+            <span id="L22">22</span>
+          </td>
+          <td>Bangladesh</td>
+          <td>BNG</td>
+          <td>771</td>
+          <td>16</td>
+          <td>BG</td>
+          <td>513</td>
+          <td>BD</td>
+          <td>BGD</td>
+          <td>50</td>
+          <td>50</td>
+          <td>BGD</td>
+          <td>.*bangladesh.*</td>
+          <td>Asia</td>
+          <td>Southern Asia</td>
+        </tr>
+        <tr id="LC23" class="line">
+          <td class="blob-line-nums csv-row-num">
+            <span id="L23">23</span>
+          </td>
+          <td>Barbados</td>
+          <td>BAR</td>
+          <td>53</td>
+          <td>14</td>
+          <td>BB</td>
+          <td>316</td>
+          <td>BB</td>
+          <td>BRB</td>
+          <td>52</td>
+          <td>52</td>
+          <td>BRB</td>
+          <td>.*barbados.*</td>
+          <td>Americas</td>
+          <td>Caribbean</td>
+        </tr>
+        <tr id="LC24" class="line">
+          <td class="blob-line-nums csv-row-num">
+            <span id="L24">24</span>
+          </td>
+          <td>Bavaria</td>
+          <td>BAV</td>
+          <td>245</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr id="LC25" class="line">
+          <td class="blob-line-nums csv-row-num">
+            <span id="L25">25</span>
+          </td>
+          <td>Belarus</td>
+          <td>BLR</td>
+          <td>370</td>
+          <td>57</td>
+          <td>BO</td>
+          <td>913</td>
+          <td>BY</td>
+          <td>BLR</td>
+          <td>112</td>
+          <td>112</td>
+          <td>BLR</td>
+          <td>.*belarus.*</td>
+          <td>Europe</td>
+          <td>Eastern Europe</td>
+        </tr>
+        <tr id="LC26" class="line">
+          <td class="blob-line-nums csv-row-num">
+            <span id="L26">26</span>
+          </td>
+          <td>Belgium</td>
+          <td>BEL</td>
+          <td>211</td>
+          <td>255</td>
+          <td>BE</td>
+          <td>124</td>
+          <td>BE</td>
+          <td>BEL</td>
+          <td>56</td>
+          <td>56</td>
+          <td>BEL</td>
+          <td>.*(?!.*luxemb)belgium(?!.*luxemb).*</td>
+          <td>Europe</td>
+          <td>Western Europe</td>
+        </tr>
+        <tr id="LC27" class="line">
+          <td class="blob-line-nums csv-row-num">
+            <span id="L27">27</span>
+          </td>
+          <td>Belize</td>
+          <td>BLZ</td>
+          <td>80</td>
+          <td>23</td>
+          <td>BH</td>
+          <td>339</td>
+          <td>BZ</td>
+          <td>BLZ</td>
+          <td>84</td>
+          <td>84</td>
+          <td>BLZ</td>
+          <td>.*belize.*</td>
+          <td>Americas</td>
+          <td>Central America</td>
+        </tr>
+        <tr id="LC28" class="line">
+          <td class="blob-line-nums csv-row-num">
+            <span id="L28">28</span>
+          </td>
+          <td>Benin</td>
+          <td>BEN</td>
+          <td>434</td>
+          <td>53</td>
+          <td>BN</td>
+          <td>638</td>
+          <td>BJ</td>
+          <td>BEN</td>
+          <td>204</td>
+          <td>204</td>
+          <td>BEN</td>
+          <td>.*benin.*|.*dahome.*</td>
+          <td>Africa</td>
+          <td>Western Africa</td>
+        </tr>
+        <tr id="LC29" class="line">
+          <td class="blob-line-nums csv-row-num">
+            <span id="L29">29</span>
+          </td>
+          <td>Bermuda</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>319</td>
+          <td>BM</td>
+          <td>BMU</td>
+          <td>60</td>
+          <td>60</td>
+          <td>BMU</td>
+          <td>.*bermuda.*</td>
+          <td>Americas</td>
+          <td>Northern America </td>
+        </tr>
+        <tr id="LC30" class="line">
+          <td class="blob-line-nums csv-row-num">
+            <span id="L30">30</span>
+          </td>
+          <td>Bhutan</td>
+          <td>BHU</td>
+          <td>760</td>
+          <td>18</td>
+          <td>BT</td>
+          <td>514</td>
+          <td>BT</td>
+          <td>BTN</td>
+          <td>64</td>
+          <td>64</td>
+          <td>BTN</td>
+          <td>.*bhutan.*</td>
+          <td>Asia</td>
+          <td>Southern Asia</td>
+        </tr>
+        <tr id="LC31" class="line">
+          <td class="blob-line-nums csv-row-num">
+            <span id="L31">31</span>
+          </td>
+          <td>Bolivia, Plurinational State Of</td>
+          <td>BOL</td>
+          <td>145</td>
+          <td>19</td>
+          <td>BL</td>
+          <td>218</td>
+          <td>BO</td>
+          <td>BOL</td>
+          <td>68</td>
+          <td>68</td>
+          <td>BOL</td>
+          <td>.*bolivia.*</td>
+          <td>Americas</td>
+          <td>South America</td>
+        </tr>
+        <tr id="LC32" class="line">
+          <td class="blob-line-nums csv-row-num">
+            <span id="L32">32</span>
+          </td>
+          <td>Bosnia And Herzegovina</td>
+          <td>BOS</td>
+          <td>346</td>
+          <td>80</td>
+          <td>BK</td>
+          <td>963</td>
+          <td>BA</td>
+          <td>BIH</td>
+          <td>70</td>
+          <td>70</td>
+          <td>BIH</td>
+          <td>.*herzegovina.*|.*bosnia.*</td>
+          <td>Europe</td>
+          <td>Southern Europe</td>
+        </tr>
+        <tr id="LC33" class="line">
+          <td class="blob-line-nums csv-row-num">
+            <span id="L33">33</span>
+          </td>
+          <td>Botswana</td>
+          <td>BOT</td>
+          <td>571</td>
+          <td>20</td>
+          <td>BC</td>
+          <td>616</td>
+          <td>BW</td>
+          <td>BWA</td>
+          <td>72</td>
+          <td>72</td>
+          <td>BWA</td>
+          <td>.*botswana.*</td>
+          <td>Africa</td>
+          <td>Southern Africa</td>
+        </tr>
+        <tr id="LC34" class="line">
+          <td class="blob-line-nums csv-row-num">
+            <span id="L34">34</span>
+          </td>
+          <td>Bouvet Island</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>BV</td>
+          <td>BVT</td>
+          <td>74</td>
+          <td></td>
+          <td>BVT</td>
+          <td>.*bouvet.*</td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr id="LC35" class="line">
+          <td class="blob-line-nums csv-row-num">
+            <span id="L35">35</span>
+          </td>
+          <td>Brazil</td>
+          <td>BRA</td>
+          <td>140</td>
+          <td>21</td>
+          <td>BR</td>
+          <td>223</td>
+          <td>BR</td>
+          <td>BRA</td>
+          <td>76</td>
+          <td>76</td>
+          <td>BRA</td>
+          <td>.*brazil.*</td>
+          <td>Americas</td>
+          <td>South America</td>
+        </tr>
+        <tr id="LC36" class="line">
+          <td class="blob-line-nums csv-row-num">
+            <span id="L36">36</span>
+          </td>
+          <td>British Indian Ocean Territory</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>IO</td>
+          <td>IOT</td>
+          <td>86</td>
+          <td></td>
+          <td>IOT</td>
+          <td>.*british indian ocean territory.*</td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr id="LC37" class="line">
+          <td class="blob-line-nums csv-row-num">
+            <span id="L37">37</span>
+          </td>
+          <td>Brunei Darussalam</td>
+          <td>BRU</td>
+          <td>835</td>
+          <td></td>
+          <td>BX</td>
+          <td>516</td>
+          <td>BN</td>
+          <td>BRN</td>
+          <td>96</td>
+          <td>96</td>
+          <td>BRN</td>
+          <td>.*brunei.*</td>
+          <td>Asia</td>
+          <td>South-Eastern Asia</td>
+        </tr>
+        <tr id="LC38" class="line">
+          <td class="blob-line-nums csv-row-num">
+            <span id="L38">38</span>
+          </td>
+          <td>Bulgaria</td>
+          <td>BUL</td>
+          <td>355</td>
+          <td>27</td>
+          <td>BU</td>
+          <td>918</td>
+          <td>BG</td>
+          <td>BGR</td>
+          <td>100</td>
+          <td>100</td>
+          <td>BGR</td>
+          <td>.*bulgaria.*</td>
+          <td>Europe</td>
+          <td>Eastern Europe</td>
+        </tr>
+        <tr id="LC39" class="line">
+          <td class="blob-line-nums csv-row-num">
+            <span id="L39">39</span>
+          </td>
+          <td>Burkina Faso</td>
+          <td>BFO</td>
+          <td>439</td>
+          <td>233</td>
+          <td>UV</td>
+          <td>748</td>
+          <td>BF</td>
+          <td>BFA</td>
+          <td>854</td>
+          <td>854</td>
+          <td>BFA</td>
+          <td>.*burkina.*|.*faso.*</td>
+          <td>Africa</td>
+          <td>Western Africa</td>
+        </tr>
+        <tr id="LC40" class="line">
+          <td class="blob-line-nums csv-row-num">
+            <span id="L40">40</span>
+          </td>
+          <td>Burundi</td>
+          <td>BUI</td>
+          <td>516</td>
+          <td>29</td>
+          <td>BY</td>
+          <td>618</td>
+          <td>BI</td>
+          <td>BDI</td>
+          <td>108</td>
+          <td>108</td>
+          <td>BDI</td>
+          <td>.*burundi.*</td>
+          <td>Africa</td>
+          <td>Eastern Africa</td>
+        </tr>
+        <tr id="LC41" class="line">
+          <td class="blob-line-nums csv-row-num">
+            <span id="L41">41</span>
+          </td>
+          <td>Cambodia</td>
+          <td>CAM</td>
+          <td>811</td>
+          <td>115</td>
+          <td>CB</td>
+          <td>522</td>
+          <td>KH</td>
+          <td>KHM</td>
+          <td>116</td>
+          <td>116</td>
+          <td>KHM</td>
+          <td>.*cambodia.*|.*kampuchea.*|.*khmer.*|.*prk.*</td>
+          <td>Asia</td>
+          <td>South-Eastern Asia</td>
+        </tr>
+        <tr id="LC42" class="line">
+          <td class="blob-line-nums csv-row-num">
+            <span id="L42">42</span>
+          </td>
+          <td>Cameroon</td>
+          <td>CAO</td>
+          <td>471</td>
+          <td>32</td>
+          <td>CM</td>
+          <td>622</td>
+          <td>CM</td>
+          <td>CMR</td>
+          <td>120</td>
+          <td>120</td>
+          <td>CMR</td>
+          <td>.*cameroon.*</td>
+          <td>Africa</td>
+          <td>Middle Africa</td>
+        </tr>
+        <tr id="LC43" class="line">
+          <td class="blob-line-nums csv-row-num">
+            <span id="L43">43</span>
+          </td>
+          <td>Canada</td>
+          <td>CAN</td>
+          <td>20</td>
+          <td>33</td>
+          <td>CA</td>
+          <td>156</td>
+          <td>CA</td>
+          <td>CAN</td>
+          <td>124</td>
+          <td>124</td>
+          <td>CAN</td>
+          <td>.*canada.*</td>
+          <td>Americas</td>
+          <td>Northern America </td>
+        </tr>
+        <tr id="LC44" class="line">
+          <td class="blob-line-nums csv-row-num">
+            <span id="L44">44</span>
+          </td>
+          <td>Cape Verde</td>
+          <td>CAP</td>
+          <td>402</td>
+          <td>35</td>
+          <td>CV</td>
+          <td>624</td>
+          <td>CV</td>
+          <td>CPV</td>
+          <td>132</td>
+          <td>132</td>
+          <td>CPV</td>
+          <td>.*verde.*</td>
+          <td>Africa</td>
+          <td>Western Africa</td>
+        </tr>
+        <tr id="LC45" class="line">
+          <td class="blob-line-nums csv-row-num">
+            <span id="L45">45</span>
+          </td>
+          <td>Cayman Islands</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>CJ</td>
+          <td>377</td>
+          <td>KY</td>
+          <td>CYM</td>
+          <td>136</td>
+          <td>136</td>
+          <td>CYM</td>
+          <td>.*cayman.*</td>
+          <td>Americas</td>
+          <td>Caribbean</td>
+        </tr>
+        <tr id="LC46" class="line">
+          <td class="blob-line-nums csv-row-num">
+            <span id="L46">46</span>
+          </td>
+          <td>Central African Republic</td>
+          <td>CEN</td>
+          <td>482</td>
+          <td>37</td>
+          <td>CT</td>
+          <td>626</td>
+          <td>CF</td>
+          <td>CAF</td>
+          <td>140</td>
+          <td>140</td>
+          <td>CAF</td>
+          <td>.*cen.*afr.*|.*cen.*af.*</td>
+          <td>Africa</td>
+          <td>Middle Africa</td>
+        </tr>
+        <tr id="LC47" class="line">
+          <td class="blob-line-nums csv-row-num">
+            <span id="L47">47</span>
+          </td>
+          <td>Chad</td>
+          <td>CHA</td>
+          <td>483</td>
+          <td>39</td>
+          <td>CD</td>
+          <td>628</td>
+          <td>TD</td>
+          <td>TCD</td>
+          <td>148</td>
+          <td>148</td>
+          <td>TCD</td>
+          <td>.*chad.*</td>
+          <td>Africa</td>
+          <td>Middle Africa</td>
+        </tr>
+        <tr id="LC48" class="line">
+          <td class="blob-line-nums csv-row-num">
+            <span id="L48">48</span>
+          </td>
+          <td>Chile</td>
+          <td>CHL</td>
+          <td>155</td>
+          <td>40</td>
+          <td>CI</td>
+          <td>228</td>
+          <td>CL</td>
+          <td>CHL</td>
+          <td>152</td>
+          <td>152</td>
+          <td>CHL</td>
+          <td>.*chile.*</td>
+          <td>Americas</td>
+          <td>South America</td>
+        </tr>
+        <tr id="LC49" class="line">
+          <td class="blob-line-nums csv-row-num">
+            <span id="L49">49</span>
+          </td>
+          <td>China</td>
+          <td>CHN</td>
+          <td>710</td>
+          <td>351</td>
+          <td>CH</td>
+          <td>924</td>
+          <td>CN</td>
+          <td>CHN</td>
+          <td>156</td>
+          <td>156</td>
+          <td>CHN</td>
+          <td>(?:(?!mac))(?:(?!hong)).*china(?!.*kong)(?!.*mac).*|.*prc.*</td>
+          <td>Asia</td>
+          <td>Eastern Asia</td>
+        </tr>
+        <tr id="LC50" class="line">
+          <td class="blob-line-nums csv-row-num">
+            <span id="L50">50</span>
+          </td>
+          <td>Christmas Island</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>CX</td>
+          <td></td>
+          <td>CX</td>
+          <td>CXR</td>
+          <td>162</td>
+          <td></td>
+          <td>CXR</td>
+          <td>.*christmas.*</td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr id="LC51" class="line">
+          <td class="blob-line-nums csv-row-num">
+            <span id="L51">51</span>
+          </td>
+          <td>Cocos (Keeling) Islands</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>CC</td>
+          <td>CCK</td>
+          <td>166</td>
+          <td></td>
+          <td>CCK</td>
+          <td>.*cocos.*</td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr id="LC52" class="line">
+          <td class="blob-line-nums csv-row-num">
+            <span id="L52">52</span>
+          </td>
+          <td>Colombia</td>
+          <td>COL</td>
+          <td>100</td>
+          <td>44</td>
+          <td>CO</td>
+          <td>233</td>
+          <td>CO</td>
+          <td>COL</td>
+          <td>170</td>
+          <td>170</td>
+          <td>COL</td>
+          <td>.*colombia.*</td>
+          <td>Americas</td>
+          <td>South America</td>
+        </tr>
+        <tr id="LC53" class="line">
+          <td class="blob-line-nums csv-row-num">
+            <span id="L53">53</span>
+          </td>
+          <td>Comoros</td>
+          <td>COM</td>
+          <td>581</td>
+          <td>45</td>
+          <td>CN</td>
+          <td>632</td>
+          <td>KM</td>
+          <td>COM</td>
+          <td>174</td>
+          <td>174</td>
+          <td>COM</td>
+          <td>.*comoro.*</td>
+          <td>Africa</td>
+          <td>Eastern Africa</td>
+        </tr>
+        <tr id="LC54" class="line">
+          <td class="blob-line-nums csv-row-num">
+            <span id="L54">54</span>
+          </td>
+          <td>Congo, Republic Of</td>
+          <td>CON</td>
+          <td>484</td>
+          <td>46</td>
+          <td>CF</td>
+          <td>634</td>
+          <td>CG</td>
+          <td>COG</td>
+          <td>178</td>
+          <td>178</td>
+          <td>COG</td>
+          <td>(?!dem)(?!dr).*congo(?!.*dem)(?!.*dr).*</td>
+          <td>Africa</td>
+          <td>Middle Africa</td>
+        </tr>
+        <tr id="LC55" class="line">
+          <td class="blob-line-nums csv-row-num">
+            <span id="L55">55</span>
+          </td>
+          <td>Congo, The Democratic Republic Of</td>
+          <td>DRC</td>
+          <td>490</td>
+          <td>250</td>
+          <td>CG</td>
+          <td>636</td>
+          <td>CD</td>
+          <td>COD</td>
+          <td>180</td>
+          <td>180</td>
+          <td>ZAR</td>
+          <td>.*dem.*congo.*|.*congo.*dem.*|.*congo.*dr.*|.*dr.*congo.*|.*zaire.*|.*congo.*br.|.*congo.*drc.*</td>
+          <td>Africa</td>
+          <td>Middle Africa</td>
+        </tr>
+        <tr id="LC56" class="line">
+          <td class="blob-line-nums csv-row-num">
+            <span id="L56">56</span>
+          </td>
+          <td>Cook Islands</td>
+          <td></td>
+          <td></td>
+          <td>47</td>
+          <td>CW</td>
+          <td>815</td>
+          <td>CK</td>
+          <td>COK</td>
+          <td>184</td>
+          <td>184</td>
+          <td>COK</td>
+          <td>.*cook.*</td>
+          <td>Oceania</td>
+          <td>Polynesia</td>
+        </tr>
+        <tr id="LC57" class="line">
+          <td class="blob-line-nums csv-row-num">
+            <span id="L57">57</span>
+          </td>
+          <td>Costa Rica</td>
+          <td>COS</td>
+          <td>94</td>
+          <td>48</td>
+          <td>CS</td>
+          <td>238</td>
+          <td>CR</td>
+          <td>CRI</td>
+          <td>188</td>
+          <td>188</td>
+          <td>CRI</td>
+          <td>.*costa.rica.*</td>
+          <td>Americas</td>
+          <td>Central America</td>
+        </tr>
+        <tr id="LC58" class="line">
+          <td class="blob-line-nums csv-row-num">
+            <span id="L58">58</span>
+          </td>
+          <td>Cote D&#39;Ivoire</td>
+          <td>CDI</td>
+          <td>437</td>
+          <td>107</td>
+          <td>IV</td>
+          <td>662</td>
+          <td>CI</td>
+          <td>CIV</td>
+          <td>384</td>
+          <td>384</td>
+          <td>CIV</td>
+          <td>.*ivoire.*|.*ivory.*</td>
+          <td>Africa</td>
+          <td>Western Africa</td>
+        </tr>
+        <tr id="LC59" class="line">
+          <td class="blob-line-nums csv-row-num">
+            <span id="L59">59</span>
+          </td>
+          <td>Croatia</td>
+          <td>CRO</td>
+          <td>344</td>
+          <td>98</td>
+          <td>HR</td>
+          <td>960</td>
+          <td>HR</td>
+          <td>HRV</td>
+          <td>191</td>
+          <td>191</td>
+          <td>HRV</td>
+          <td>.*croatia.*</td>
+          <td>Europe</td>
+          <td>Southern Europe</td>
+        </tr>
+        <tr id="LC60" class="line">
+          <td class="blob-line-nums csv-row-num">
+            <span id="L60">60</span>
+          </td>
+          <td>Cuba</td>
+          <td>CUB</td>
+          <td>40</td>
+          <td>49</td>
+          <td>CU</td>
+          <td>928</td>
+          <td>CU</td>
+          <td>CUB</td>
+          <td>192</td>
+          <td>192</td>
+          <td>CUB</td>
+          <td>.*cuba.*</td>
+          <td>Americas</td>
+          <td>Caribbean</td>
+        </tr>
+        <tr id="LC61" class="line">
+          <td class="blob-line-nums csv-row-num">
+            <span id="L61">61</span>
+          </td>
+          <td>Curacao</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>UC</td>
+          <td>354</td>
+          <td>CW</td>
+          <td>CUW</td>
+          <td>531</td>
+          <td>531</td>
+          <td>CUW</td>
+          <td>.*curacao.*</td>
+          <td>Americas</td>
+          <td>Caribbean</td>
+        </tr>
+        <tr id="LC62" class="line">
+          <td class="blob-line-nums csv-row-num">
+            <span id="L62">62</span>
+          </td>
+          <td>Cyprus</td>
+          <td>CYP</td>
+          <td>352</td>
+          <td>50</td>
+          <td>CY</td>
+          <td>423</td>
+          <td>CY</td>
+          <td>CYP</td>
+          <td>196</td>
+          <td>196</td>
+          <td>CYP</td>
+          <td>.*cyprus.*</td>
+          <td>Asia</td>
+          <td>Western Asia</td>
+        </tr>
+        <tr id="LC63" class="line">
+          <td class="blob-line-nums csv-row-num">
+            <span id="L63">63</span>
+          </td>
+          <td>Czech Republic</td>
+          <td>CZR</td>
+          <td>316</td>
+          <td>167</td>
+          <td>EZ</td>
+          <td>935</td>
+          <td>CZ</td>
+          <td>CZE</td>
+          <td>203</td>
+          <td>203</td>
+          <td>CZE</td>
+          <td>.*czech.*rep.*|.*rep.*czech.*</td>
+          <td>Europe</td>
+          <td>Eastern Europe</td>
+        </tr>
+        <tr id="LC64" class="line">
+          <td class="blob-line-nums csv-row-num">
+            <span id="L64">64</span>
+          </td>
+          <td>Czechoslovakia</td>
+          <td>CZE</td>
+          <td>315</td>
+          <td></td>
+          <td></td>
+          <td>934</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>.*czechoslovakia.*</td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr id="LC65" class="line">
+          <td class="blob-line-nums csv-row-num">
+            <span id="L65">65</span>
+          </td>
+          <td>Denmark</td>
+          <td>DEN</td>
+          <td>390</td>
+          <td>54</td>
+          <td>DA</td>
+          <td>128</td>
+          <td>DK</td>
+          <td>DNK</td>
+          <td>208</td>
+          <td>208</td>
+          <td>DNK</td>
+          <td>.*denmark.*</td>
+          <td>Europe</td>
+          <td>Northern Europe</td>
+        </tr>
+        <tr id="LC66" class="line">
+          <td class="blob-line-nums csv-row-num">
+            <span id="L66">66</span>
+          </td>
+          <td>Djibouti</td>
+          <td>DJI</td>
+          <td>522</td>
+          <td>72</td>
+          <td>DJ</td>
+          <td>611</td>
+          <td>DJ</td>
+          <td>DJI</td>
+          <td>262</td>
+          <td>262</td>
+          <td>DJI</td>
+          <td>.*djibouti.*</td>
+          <td>Africa</td>
+          <td>Eastern Africa</td>
+        </tr>
+        <tr id="LC67" class="line">
+          <td class="blob-line-nums csv-row-num">
+            <span id="L67">67</span>
+          </td>
+          <td>Dominica</td>
+          <td>DMA</td>
+          <td>54</td>
+          <td>55</td>
+          <td>DO</td>
+          <td>321</td>
+          <td>DM</td>
+          <td>DMA</td>
+          <td>212</td>
+          <td>212</td>
+          <td>DMA</td>
+          <td>.*dominica(?!n)(?!.*rep).*</td>
+          <td>Americas</td>
+          <td>Caribbean</td>
+        </tr>
+        <tr id="LC68" class="line">
+          <td class="blob-line-nums csv-row-num">
+            <span id="L68">68</span>
+          </td>
+          <td>Dominican Republic</td>
+          <td>DOM</td>
+          <td>42</td>
+          <td>56</td>
+          <td>DR</td>
+          <td>243</td>
+          <td>DO</td>
+          <td>DOM</td>
+          <td>214</td>
+          <td>214</td>
+          <td>DOM</td>
+          <td>.*domin.*rep.*|.*rep.*domin.*|.*dom.*rep.*</td>
+          <td>Americas</td>
+          <td>Caribbean</td>
+        </tr>
+        <tr id="LC69" class="line">
+          <td class="blob-line-nums csv-row-num">
+            <span id="L69">69</span>
+          </td>
+          <td>Ecuador</td>
+          <td>ECU</td>
+          <td>130</td>
+          <td>58</td>
+          <td>EC</td>
+          <td>248</td>
+          <td>EC</td>
+          <td>ECU</td>
+          <td>218</td>
+          <td>218</td>
+          <td>ECU</td>
+          <td>.*ecuador.*</td>
+          <td>Americas</td>
+          <td>South America</td>
+        </tr>
+        <tr id="LC70" class="line">
+          <td class="blob-line-nums csv-row-num">
+            <span id="L70">70</span>
+          </td>
+          <td>Egypt</td>
+          <td>EGY</td>
+          <td>651</td>
+          <td>59</td>
+          <td>EG</td>
+          <td>469</td>
+          <td>EG</td>
+          <td>EGY</td>
+          <td>818</td>
+          <td>818</td>
+          <td>EGY</td>
+          <td>.*egypt.*</td>
+          <td>Africa</td>
+          <td>Northern Africa</td>
+        </tr>
+        <tr id="LC71" class="line">
+          <td class="blob-line-nums csv-row-num">
+            <span id="L71">71</span>
+          </td>
+          <td>El Salvador</td>
+          <td>SAL</td>
+          <td>92</td>
+          <td>60</td>
+          <td>ES</td>
+          <td>253</td>
+          <td>SV</td>
+          <td>SLV</td>
+          <td>222</td>
+          <td>222</td>
+          <td>SLV</td>
+          <td>.*el.*salvador.*</td>
+          <td>Americas</td>
+          <td>Central America</td>
+        </tr>
+        <tr id="LC72" class="line">
+          <td class="blob-line-nums csv-row-num">
+            <span id="L72">72</span>
+          </td>
+          <td>Equatorial Guinea</td>
+          <td>EQG</td>
+          <td>411</td>
+          <td>61</td>
+          <td>EK</td>
+          <td>642</td>
+          <td>GQ</td>
+          <td>GNQ</td>
+          <td>226</td>
+          <td>226</td>
+          <td>GNQ</td>
+          <td>.*guine.*equa.*|.*eq.*guine.*</td>
+          <td>Africa</td>
+          <td>Middle Africa</td>
+        </tr>
+        <tr id="LC73" class="line">
+          <td class="blob-line-nums csv-row-num">
+            <span id="L73">73</span>
+          </td>
+          <td>Eritrea</td>
+          <td>ERI</td>
+          <td>531</td>
+          <td>178</td>
+          <td>ER</td>
+          <td>643</td>
+          <td>ER</td>
+          <td>ERI</td>
+          <td>232</td>
+          <td>232</td>
+          <td>ERI</td>
+          <td>.*eritrea.*</td>
+          <td>Africa</td>
+          <td>Eastern Africa</td>
+        </tr>
+        <tr id="LC74" class="line">
+          <td class="blob-line-nums csv-row-num">
+            <span id="L74">74</span>
+          </td>
+          <td>Estonia</td>
+          <td>EST</td>
+          <td>366</td>
+          <td>63</td>
+          <td>EN</td>
+          <td>939</td>
+          <td>EE</td>
+          <td>EST</td>
+          <td>233</td>
+          <td>233</td>
+          <td>EST</td>
+          <td>.*estonia.*</td>
+          <td>Europe</td>
+          <td>Northern Europe</td>
+        </tr>
+        <tr id="LC75" class="line">
+          <td class="blob-line-nums csv-row-num">
+            <span id="L75">75</span>
+          </td>
+          <td>Ethiopia</td>
+          <td>ETH</td>
+          <td>530</td>
+          <td>238</td>
+          <td>ET</td>
+          <td>644</td>
+          <td>ET</td>
+          <td>ETH</td>
+          <td>231</td>
+          <td>231</td>
+          <td>ETH</td>
+          <td>.*ethiopia.*|.*abyssinia.*</td>
+          <td>Africa</td>
+          <td>Eastern Africa</td>
+        </tr>
+        <tr id="LC76" class="line">
+          <td class="blob-line-nums csv-row-num">
+            <span id="L76">76</span>
+          </td>
+          <td>Falkland Islands (Malvinas)</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>FK</td>
+          <td>323</td>
+          <td>FK</td>
+          <td>FLK</td>
+          <td>238</td>
+          <td>238</td>
+          <td>FLK</td>
+          <td>.*falkland.*|.*malvinas.*</td>
+          <td>Americas</td>
+          <td>South America</td>
+        </tr>
+        <tr id="LC77" class="line">
+          <td class="blob-line-nums csv-row-num">
+            <span id="L77">77</span>
+          </td>
+          <td>Faroe Islands</td>
+          <td></td>
+          <td></td>
+          <td>64</td>
+          <td>FO</td>
+          <td>816</td>
+          <td>FO</td>
+          <td>FRO</td>
+          <td>234</td>
+          <td>234</td>
+          <td>FRO</td>
+          <td>.*faroe.*|.*faeroe.*</td>
+          <td>Europe</td>
+          <td>Northern Europe</td>
+        </tr>
+        <tr id="LC78" class="line">
+          <td class="blob-line-nums csv-row-num">
+            <span id="L78">78</span>
+          </td>
+          <td>Fiji</td>
+          <td>FIJ</td>
+          <td>950</td>
+          <td>66</td>
+          <td>FJ</td>
+          <td>819</td>
+          <td>FJ</td>
+          <td>FJI</td>
+          <td>242</td>
+          <td>242</td>
+          <td>FJI</td>
+          <td>.*fiji.*</td>
+          <td>Oceania</td>
+          <td>Melanesia</td>
+        </tr>
+        <tr id="LC79" class="line">
+          <td class="blob-line-nums csv-row-num">
+            <span id="L79">79</span>
+          </td>
+          <td>Finland</td>
+          <td>FIN</td>
+          <td>375</td>
+          <td>67</td>
+          <td>FI</td>
+          <td>172</td>
+          <td>FI</td>
+          <td>FIN</td>
+          <td>246</td>
+          <td>246</td>
+          <td>FIN</td>
+          <td>.*finland.*</td>
+          <td>Europe</td>
+          <td>Northern Europe</td>
+        </tr>
+        <tr id="LC80" class="line">
+          <td class="blob-line-nums csv-row-num">
+            <span id="L80">80</span>
+          </td>
+          <td>France</td>
+          <td>FRN</td>
+          <td>220</td>
+          <td>68</td>
+          <td>FR</td>
+          <td>132</td>
+          <td>FR</td>
+          <td>FRA</td>
+          <td>250</td>
+          <td>250</td>
+          <td>FRA</td>
+          <td>.*france.*</td>
+          <td>Europe</td>
+          <td>Western Europe</td>
+        </tr>
+        <tr id="LC81" class="line">
+          <td class="blob-line-nums csv-row-num">
+            <span id="L81">81</span>
+          </td>
+          <td>French Guiana</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>FG</td>
+          <td>333</td>
+          <td>GF</td>
+          <td>GUF</td>
+          <td>254</td>
+          <td>254</td>
+          <td>GUF</td>
+          <td>.*french guiana.*</td>
+          <td>Americas</td>
+          <td>South America</td>
+        </tr>
+        <tr id="LC82" class="line">
+          <td class="blob-line-nums csv-row-num">
+            <span id="L82">82</span>
+          </td>
+          <td>French Polynesia</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>FP</td>
+          <td>887</td>
+          <td>PF</td>
+          <td>PYF</td>
+          <td>258</td>
+          <td>258</td>
+          <td>PYF</td>
+          <td>.*french polynesia.*</td>
+          <td>Oceania</td>
+          <td>Polynesia</td>
+        </tr>
+        <tr id="LC83" class="line">
+          <td class="blob-line-nums csv-row-num">
+            <span id="L83">83</span>
+          </td>
+          <td>French Southern Territories</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>TF</td>
+          <td>ATF</td>
+          <td>260</td>
+          <td></td>
+          <td>ATF</td>
+          <td>.*french.*southern.*territories.*</td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr id="LC84" class="line">
+          <td class="blob-line-nums csv-row-num">
+            <span id="L84">84</span>
+          </td>
+          <td>Gabon</td>
+          <td>GAB</td>
+          <td>481</td>
+          <td>74</td>
+          <td>GB</td>
+          <td>646</td>
+          <td>GA</td>
+          <td>GAB</td>
+          <td>266</td>
+          <td>266</td>
+          <td>GAB</td>
+          <td>.*gabon.*</td>
+          <td>Africa</td>
+          <td>Middle Africa</td>
+        </tr>
+        <tr id="LC85" class="line">
+          <td class="blob-line-nums csv-row-num">
+            <span id="L85">85</span>
+          </td>
+          <td>Gambia</td>
+          <td>GAM</td>
+          <td>420</td>
+          <td>75</td>
+          <td>GA</td>
+          <td>648</td>
+          <td>GM</td>
+          <td>GMB</td>
+          <td>270</td>
+          <td>270</td>
+          <td>GMB</td>
+          <td>.*gambia.*</td>
+          <td>Africa</td>
+          <td>Western Africa</td>
+        </tr>
+        <tr id="LC86" class="line">
+          <td class="blob-line-nums csv-row-num">
+            <span id="L86">86</span>
+          </td>
+          <td>Georgia</td>
+          <td>GRG</td>
+          <td>372</td>
+          <td>73</td>
+          <td>GG</td>
+          <td>915</td>
+          <td>GE</td>
+          <td>GEO</td>
+          <td>268</td>
+          <td>268</td>
+          <td>GEO</td>
+          <td>(?&lt;!south)georgia.*</td>
+          <td>Asia</td>
+          <td>Western Asia</td>
+        </tr>
+        <tr id="LC87" class="line">
+          <td class="blob-line-nums csv-row-num">
+            <span id="L87">87</span>
+          </td>
+          <td>German Democratic Republic</td>
+          <td>GDR</td>
+          <td>265</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>.*german.*democratic.*republic.*|.*ddr.*</td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr id="LC88" class="line">
+          <td class="blob-line-nums csv-row-num">
+            <span id="L88">88</span>
+          </td>
+          <td>German Federal Republic</td>
+          <td>GFR</td>
+          <td>260</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr id="LC89" class="line">
+          <td class="blob-line-nums csv-row-num">
+            <span id="L89">89</span>
+          </td>
+          <td>Germany</td>
+          <td>GMY</td>
+          <td>255</td>
+          <td>79</td>
+          <td>GM</td>
+          <td>134</td>
+          <td>DE</td>
+          <td>DEU</td>
+          <td>276</td>
+          <td>276</td>
+          <td>DEU</td>
+          <td>(?!east).*germany.*|.*baden.*|.*bavaria.*|.*german.*fed.*rep.*|.*fed.*rep.*german.*</td>
+          <td>Europe</td>
+          <td>Western Europe</td>
+        </tr>
+        <tr id="LC90" class="line">
+          <td class="blob-line-nums csv-row-num">
+            <span id="L90">90</span>
+          </td>
+          <td>Ghana</td>
+          <td>GHA</td>
+          <td>452</td>
+          <td>81</td>
+          <td>GH</td>
+          <td>652</td>
+          <td>GH</td>
+          <td>GHA</td>
+          <td>288</td>
+          <td>288</td>
+          <td>GHA</td>
+          <td>.*ghana.*</td>
+          <td>Africa</td>
+          <td>Western Africa</td>
+        </tr>
+        <tr id="LC91" class="line">
+          <td class="blob-line-nums csv-row-num">
+            <span id="L91">91</span>
+          </td>
+          <td>Gibraltar</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>GI</td>
+          <td>823</td>
+          <td>GI</td>
+          <td>GIB</td>
+          <td>292</td>
+          <td>292</td>
+          <td>GIB</td>
+          <td>.*gibraltar.*</td>
+          <td>Europe</td>
+          <td>Southern Europe</td>
+        </tr>
+        <tr id="LC92" class="line">
+          <td class="blob-line-nums csv-row-num">
+            <span id="L92">92</span>
+          </td>
+          <td>Greece</td>
+          <td>GRC</td>
+          <td>350</td>
+          <td>84</td>
+          <td>GR</td>
+          <td>174</td>
+          <td>GR</td>
+          <td>GRC</td>
+          <td>300</td>
+          <td>300</td>
+          <td>GRC</td>
+          <td>.*greece.*</td>
+          <td>Europe</td>
+          <td>Southern Europe</td>
+        </tr>
+        <tr id="LC93" class="line">
+          <td class="blob-line-nums csv-row-num">
+            <span id="L93">93</span>
+          </td>
+          <td>Greenland</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>GL</td>
+          <td>326</td>
+          <td>GL</td>
+          <td>GRL</td>
+          <td>304</td>
+          <td>304</td>
+          <td>GRL</td>
+          <td>.*greenland.*</td>
+          <td>Americas</td>
+          <td>Northern America </td>
+        </tr>
+        <tr id="LC94" class="line">
+          <td class="blob-line-nums csv-row-num">
+            <span id="L94">94</span>
+          </td>
+          <td>Grenada</td>
+          <td>GRN</td>
+          <td>55</td>
+          <td>86</td>
+          <td>GJ</td>
+          <td>328</td>
+          <td>GD</td>
+          <td>GRD</td>
+          <td>308</td>
+          <td>308</td>
+          <td>GRD</td>
+          <td>.*grenada.*</td>
+          <td>Americas</td>
+          <td>Caribbean</td>
+        </tr>
+        <tr id="LC95" class="line">
+          <td class="blob-line-nums csv-row-num">
+            <span id="L95">95</span>
+          </td>
+          <td>Guadeloupe</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>GP</td>
+          <td>329</td>
+          <td>GP</td>
+          <td>GLP</td>
+          <td>312</td>
+          <td>312</td>
+          <td>GLP</td>
+          <td>.*guadeloupe.*</td>
+          <td>Americas</td>
+          <td>Caribbean</td>
+        </tr>
+        <tr id="LC96" class="line">
+          <td class="blob-line-nums csv-row-num">
+            <span id="L96">96</span>
+          </td>
+          <td>Guam</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>GU</td>
+          <td>829</td>
+          <td>GU</td>
+          <td>GUM</td>
+          <td>316</td>
+          <td>316</td>
+          <td>GUM</td>
+          <td>.*guam.*</td>
+          <td>Oceania</td>
+          <td>Micronesia</td>
+        </tr>
+        <tr id="LC97" class="line">
+          <td class="blob-line-nums csv-row-num">
+            <span id="L97">97</span>
+          </td>
+          <td>Guatemala</td>
+          <td>GUA</td>
+          <td>90</td>
+          <td>89</td>
+          <td>GT</td>
+          <td>258</td>
+          <td>GT</td>
+          <td>GTM</td>
+          <td>320</td>
+          <td>320</td>
+          <td>GTM</td>
+          <td>.*guatemala.*</td>
+          <td>Americas</td>
+          <td>Central America</td>
+        </tr>
+        <tr id="LC98" class="line">
+          <td class="blob-line-nums csv-row-num">
+            <span id="L98">98</span>
+          </td>
+          <td>Guernsey</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>GK</td>
+          <td></td>
+          <td>GG</td>
+          <td>GGY</td>
+          <td>831</td>
+          <td>831</td>
+          <td>GGY</td>
+          <td>.*guernsey.*</td>
+          <td>Europe</td>
+          <td>Northern Europe</td>
+        </tr>
+        <tr id="LC99" class="line">
+          <td class="blob-line-nums csv-row-num">
+            <span id="L99">99</span>
+          </td>
+          <td>Guinea</td>
+          <td>GUI</td>
+          <td>438</td>
+          <td>90</td>
+          <td>GV</td>
+          <td>656</td>
+          <td>GN</td>
+          <td>GIN</td>
+          <td>324</td>
+          <td>324</td>
+          <td>GIN</td>
+          <td>^(?&lt;!eq)guinea(?!.*biss).*</td>
+          <td>Africa</td>
+          <td>Western Africa</td>
+        </tr>
+        <tr id="LC100" class="line">
+          <td class="blob-line-nums csv-row-num">
+            <span id="L100">100</span>
+          </td>
+          <td>Guinea-Bissau</td>
+          <td>GNB</td>
+          <td>404</td>
+          <td>175</td>
+          <td>PU</td>
+          <td>654</td>
+          <td>GW</td>
+          <td>GNB</td>
+          <td>624</td>
+          <td>624</td>
+          <td>GNB</td>
+          <td>.*bissau.*|.*guinea.*au.*</td>
+          <td>Africa</td>
+          <td>Western Africa</td>
+        </tr>
+        <tr id="LC101" class="line">
+          <td class="blob-line-nums csv-row-num">
+            <span id="L101">101</span>
+          </td>
+          <td>Guyana</td>
+          <td>GUY</td>
+          <td>110</td>
+          <td>91</td>
+          <td>GY</td>
+          <td>336</td>
+          <td>GY</td>
+          <td>GUY</td>
+          <td>328</td>
+          <td>328</td>
+          <td>GUY</td>
+          <td>.*guyana.*</td>
+          <td>Americas</td>
+          <td>South America</td>
+        </tr>
+        <tr id="LC102" class="line">
+          <td class="blob-line-nums csv-row-num">
+            <span id="L102">102</span>
+          </td>
+          <td>Haiti</td>
+          <td>HAI</td>
+          <td>41</td>
+          <td>93</td>
+          <td>HA</td>
+          <td>263</td>
+          <td>HT</td>
+          <td>HTI</td>
+          <td>332</td>
+          <td>332</td>
+          <td>HTI</td>
+          <td>.*haiti.*</td>
+          <td>Americas</td>
+          <td>Caribbean</td>
+        </tr>
+        <tr id="LC103" class="line">
+          <td class="blob-line-nums csv-row-num">
+            <span id="L103">103</span>
+          </td>
+          <td>Hanover</td>
+          <td>HAN</td>
+          <td>240</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>.*hanover.*</td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr id="LC104" class="line">
+          <td class="blob-line-nums csv-row-num">
+            <span id="L104">104</span>
+          </td>
+          <td>Heard Island And Mcdonald Islands</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>HM</td>
+          <td>HMD</td>
+          <td>334</td>
+          <td></td>
+          <td>HMD</td>
+          <td>.*heard.*mcdonald.*</td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr id="LC105" class="line">
+          <td class="blob-line-nums csv-row-num">
+            <span id="L105">105</span>
+          </td>
+          <td>Hesse Electoral</td>
+          <td>HSE</td>
+          <td>273</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>.*hesse.*lectoral.*</td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr id="LC106" class="line">
+          <td class="blob-line-nums csv-row-num">
+            <span id="L106">106</span>
+          </td>
+          <td>Hesse Grand Ducal</td>
+          <td>HSG</td>
+          <td>275</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>.*hess.*gran.*ducal.*</td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr id="LC107" class="line">
+          <td class="blob-line-nums csv-row-num">
+            <span id="L107">107</span>
+          </td>
+          <td>Holy See (Vatican City State)</td>
+          <td>PAP</td>
+          <td>327</td>
+          <td></td>
+          <td>VT</td>
+          <td></td>
+          <td>VA</td>
+          <td>VAT</td>
+          <td>336</td>
+          <td>336</td>
+          <td>VAT</td>
+          <td>.*holy see.*|.*vatican.*|.*papal.*st.*</td>
+          <td>Europe</td>
+          <td>Southern Europe</td>
+        </tr>
+        <tr id="LC108" class="line">
+          <td class="blob-line-nums csv-row-num">
+            <span id="L108">108</span>
+          </td>
+          <td>Honduras</td>
+          <td>HON</td>
+          <td>91</td>
+          <td>95</td>
+          <td>HO</td>
+          <td>268</td>
+          <td>HN</td>
+          <td>HND</td>
+          <td>340</td>
+          <td>340</td>
+          <td>HND</td>
+          <td>.*honduras.*</td>
+          <td>Americas</td>
+          <td>Central America</td>
+        </tr>
+        <tr id="LC109" class="line">
+          <td class="blob-line-nums csv-row-num">
+            <span id="L109">109</span>
+          </td>
+          <td>Hong Kong</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>532</td>
+          <td>HK</td>
+          <td>HKG</td>
+          <td>344</td>
+          <td>344</td>
+          <td>HKG</td>
+          <td>.*hong\s*kong.*</td>
+          <td>Asia</td>
+          <td>Eastern Asia</td>
+        </tr>
+        <tr id="LC110" class="line">
+          <td class="blob-line-nums csv-row-num">
+            <span id="L110">110</span>
+          </td>
+          <td>Hungary</td>
+          <td>HUN</td>
+          <td>310</td>
+          <td>97</td>
+          <td>HU</td>
+          <td>944</td>
+          <td>HU</td>
+          <td>HUN</td>
+          <td>348</td>
+          <td>348</td>
+          <td>HUN</td>
+          <td>.*hungary.*</td>
+          <td>Europe</td>
+          <td>Eastern Europe</td>
+        </tr>
+        <tr id="LC111" class="line">
+          <td class="blob-line-nums csv-row-num">
+            <span id="L111">111</span>
+          </td>
+          <td>Iceland</td>
+          <td>ICE</td>
+          <td>395</td>
+          <td>99</td>
+          <td>IC</td>
+          <td>176</td>
+          <td>IS</td>
+          <td>ISL</td>
+          <td>352</td>
+          <td>352</td>
+          <td>ISL</td>
+          <td>.*iceland.*</td>
+          <td>Europe</td>
+          <td>Northern Europe</td>
+        </tr>
+        <tr id="LC112" class="line">
+          <td class="blob-line-nums csv-row-num">
+            <span id="L112">112</span>
+          </td>
+          <td>India</td>
+          <td>IND</td>
+          <td>750</td>
+          <td>100</td>
+          <td>IN</td>
+          <td>534</td>
+          <td>IN</td>
+          <td>IND</td>
+          <td>356</td>
+          <td>356</td>
+          <td>IND</td>
+          <td>.*india(?!.*ocea).*</td>
+          <td>Asia</td>
+          <td>Southern Asia</td>
+        </tr>
+        <tr id="LC113" class="line">
+          <td class="blob-line-nums csv-row-num">
+            <span id="L113">113</span>
+          </td>
+          <td>Indonesia</td>
+          <td>INS</td>
+          <td>850</td>
+          <td>101</td>
+          <td>ID</td>
+          <td>536</td>
+          <td>ID</td>
+          <td>IDN</td>
+          <td>360</td>
+          <td>360</td>
+          <td>IDN</td>
+          <td>.*indonesia.*</td>
+          <td>Asia</td>
+          <td>South-Eastern Asia</td>
+        </tr>
+        <tr id="LC114" class="line">
+          <td class="blob-line-nums csv-row-num">
+            <span id="L114">114</span>
+          </td>
+          <td>Iran, Islamic Republic Of</td>
+          <td>IRN</td>
+          <td>630</td>
+          <td>102</td>
+          <td>IR</td>
+          <td>429</td>
+          <td>IR</td>
+          <td>IRN</td>
+          <td>364</td>
+          <td>364</td>
+          <td>IRN</td>
+          <td>.*iran.*|.*persia.*</td>
+          <td>Asia</td>
+          <td>Southern Asia</td>
+        </tr>
+        <tr id="LC115" class="line">
+          <td class="blob-line-nums csv-row-num">
+            <span id="L115">115</span>
+          </td>
+          <td>Iraq</td>
+          <td>IRQ</td>
+          <td>645</td>
+          <td>103</td>
+          <td>IZ</td>
+          <td>433</td>
+          <td>IQ</td>
+          <td>IRQ</td>
+          <td>368</td>
+          <td>368</td>
+          <td>IRQ</td>
+          <td>.*iraq.*</td>
+          <td>Asia</td>
+          <td>Western Asia</td>
+        </tr>
+        <tr id="LC116" class="line">
+          <td class="blob-line-nums csv-row-num">
+            <span id="L116">116</span>
+          </td>
+          <td>Ireland</td>
+          <td>IRE</td>
+          <td>205</td>
+          <td>104</td>
+          <td>EI</td>
+          <td>178</td>
+          <td>IE</td>
+          <td>IRL</td>
+          <td>372</td>
+          <td>372</td>
+          <td>IRL</td>
+          <td>.*ireland.*</td>
+          <td>Europe</td>
+          <td>Northern Europe</td>
+        </tr>
+        <tr id="LC117" class="line">
+          <td class="blob-line-nums csv-row-num">
+            <span id="L117">117</span>
+          </td>
+          <td>Isle Of Man</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>IM</td>
+          <td></td>
+          <td>IM</td>
+          <td>IMN</td>
+          <td>833</td>
+          <td>833</td>
+          <td>IMY</td>
+          <td>.*isle.*man.*|.*man.*isle.*</td>
+          <td>Europe</td>
+          <td>Northern Europe</td>
+        </tr>
+        <tr id="LC118" class="line">
+          <td class="blob-line-nums csv-row-num">
+            <span id="L118">118</span>
+          </td>
+          <td>Israel</td>
+          <td>ISR</td>
+          <td>666</td>
+          <td>105</td>
+          <td>IS</td>
+          <td>436</td>
+          <td>IL</td>
+          <td>ISR</td>
+          <td>376</td>
+          <td>376</td>
+          <td>ISR</td>
+          <td>.*israel.*</td>
+          <td>Asia</td>
+          <td>Western Asia</td>
+        </tr>
+        <tr id="LC119" class="line">
+          <td class="blob-line-nums csv-row-num">
+            <span id="L119">119</span>
+          </td>
+          <td>Italy</td>
+          <td>ITA</td>
+          <td>325</td>
+          <td>106</td>
+          <td>IT</td>
+          <td>136</td>
+          <td>IT</td>
+          <td>ITA</td>
+          <td>380</td>
+          <td>380</td>
+          <td>ITA</td>
+          <td>.*italy.*</td>
+          <td>Europe</td>
+          <td>Southern Europe</td>
+        </tr>
+        <tr id="LC120" class="line">
+          <td class="blob-line-nums csv-row-num">
+            <span id="L120">120</span>
+          </td>
+          <td>Jamaica</td>
+          <td>JAM</td>
+          <td>51</td>
+          <td>109</td>
+          <td>JM</td>
+          <td>343</td>
+          <td>JM</td>
+          <td>JAM</td>
+          <td>388</td>
+          <td>388</td>
+          <td>JAM</td>
+          <td>.*jamaica.*</td>
+          <td>Americas</td>
+          <td>Caribbean</td>
+        </tr>
+        <tr id="LC121" class="line">
+          <td class="blob-line-nums csv-row-num">
+            <span id="L121">121</span>
+          </td>
+          <td>Japan</td>
+          <td>JPN</td>
+          <td>740</td>
+          <td>110</td>
+          <td>JA</td>
+          <td>158</td>
+          <td>JP</td>
+          <td>JPN</td>
+          <td>392</td>
+          <td>392</td>
+          <td>JPN</td>
+          <td>.*japan.*</td>
+          <td>Asia</td>
+          <td>Eastern Asia</td>
+        </tr>
+        <tr id="LC122" class="line">
+          <td class="blob-line-nums csv-row-num">
+            <span id="L122">122</span>
+          </td>
+          <td>Jersey</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>JE</td>
+          <td>JEY</td>
+          <td>832</td>
+          <td>832</td>
+          <td>JEY</td>
+          <td>.*jersey.*</td>
+          <td>Europe</td>
+          <td>Northern Europe</td>
+        </tr>
+        <tr id="LC123" class="line">
+          <td class="blob-line-nums csv-row-num">
+            <span id="L123">123</span>
+          </td>
+          <td>Jordan</td>
+          <td>JOR</td>
+          <td>663</td>
+          <td>112</td>
+          <td>JO</td>
+          <td>439</td>
+          <td>JO</td>
+          <td>JOR</td>
+          <td>400</td>
+          <td>400</td>
+          <td>JOR</td>
+          <td>.*jordan.*</td>
+          <td>Asia</td>
+          <td>Western Asia</td>
+        </tr>
+        <tr id="LC124" class="line">
+          <td class="blob-line-nums csv-row-num">
+            <span id="L124">124</span>
+          </td>
+          <td>Kazakhstan</td>
+          <td>KZK</td>
+          <td>705</td>
+          <td>108</td>
+          <td>KZ</td>
+          <td>916</td>
+          <td>KZ</td>
+          <td>KAZ</td>
+          <td>398</td>
+          <td>398</td>
+          <td>KAZ</td>
+          <td>.*kazak.*</td>
+          <td>Asia</td>
+          <td>Central Asia</td>
+        </tr>
+        <tr id="LC125" class="line">
+          <td class="blob-line-nums csv-row-num">
+            <span id="L125">125</span>
+          </td>
+          <td>Kenya</td>
+          <td>KEN</td>
+          <td>501</td>
+          <td>114</td>
+          <td>KE</td>
+          <td>664</td>
+          <td>KE</td>
+          <td>KEN</td>
+          <td>404</td>
+          <td>404</td>
+          <td>KEN</td>
+          <td>.*kenya.*</td>
+          <td>Africa</td>
+          <td>Eastern Africa</td>
+        </tr>
+        <tr id="LC126" class="line">
+          <td class="blob-line-nums csv-row-num">
+            <span id="L126">126</span>
+          </td>
+          <td>Kiribati</td>
+          <td>KIR</td>
+          <td>946</td>
+          <td>83</td>
+          <td>KR</td>
+          <td>826</td>
+          <td>KI</td>
+          <td>KIR</td>
+          <td>296</td>
+          <td>296</td>
+          <td>KIR</td>
+          <td>.*kiribati.*</td>
+          <td>Oceania</td>
+          <td>Micronesia</td>
+        </tr>
+        <tr id="LC127" class="line">
+          <td class="blob-line-nums csv-row-num">
+            <span id="L127">127</span>
+          </td>
+          <td>Korea</td>
+          <td>KOR</td>
+          <td>730</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr id="LC128" class="line">
+          <td class="blob-line-nums csv-row-num">
+            <span id="L128">128</span>
+          </td>
+          <td>Korea, Democratic People&#39;S Republic Of</td>
+          <td>PRK</td>
+          <td>731</td>
+          <td>116</td>
+          <td>KN</td>
+          <td></td>
+          <td>KP</td>
+          <td>PRK</td>
+          <td>408</td>
+          <td>408</td>
+          <td>PRK</td>
+          <td>peo.*dem.*korea.*|.*north korea.*|.*korea.*peo.*dem.*|.*korea.*north.*|.*korea.*pr.*|korea.*dem.*peo.*rep.*|&#39;.*dem.*rep.*korea.*|.*korea.*dem.*rep.*</td>
+          <td>Asia</td>
+          <td>Eastern Asia</td>
+        </tr>
+        <tr id="LC129" class="line">
+          <td class="blob-line-nums csv-row-num">
+            <span id="L129">129</span>
+          </td>
+          <td>Korea, Republic Of</td>
+          <td>ROK</td>
+          <td>732</td>
+          <td>117</td>
+          <td>KS</td>
+          <td>542</td>
+          <td>KR</td>
+          <td>KOR</td>
+          <td>410</td>
+          <td>410</td>
+          <td>KOR</td>
+          <td>.*(?!.*dem)(?!.*nor)(?!.*peo)korea(?!.*nor)(?!.*peo)(?!.*dem).*|.*rok.*</td>
+          <td>Asia</td>
+          <td>Eastern Asia</td>
+        </tr>
+        <tr id="LC130" class="line">
+          <td class="blob-line-nums csv-row-num">
+            <span id="L130">130</span>
+          </td>
+          <td>Kosovo</td>
+          <td>KOS</td>
+          <td>347</td>
+          <td></td>
+          <td>KV</td>
+          <td>967</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>KSV</td>
+          <td>.*kosovo.*</td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr id="LC131" class="line">
+          <td class="blob-line-nums csv-row-num">
+            <span id="L131">131</span>
+          </td>
+          <td>Kuwait</td>
+          <td>KUW</td>
+          <td>690</td>
+          <td>118</td>
+          <td>KU</td>
+          <td>443</td>
+          <td>KW</td>
+          <td>KWT</td>
+          <td>414</td>
+          <td>414</td>
+          <td>KWT</td>
+          <td>.*kuwait.*</td>
+          <td>Asia</td>
+          <td>Western Asia</td>
+        </tr>
+        <tr id="LC132" class="line">
+          <td class="blob-line-nums csv-row-num">
+            <span id="L132">132</span>
+          </td>
+          <td>Kyrgyzstan</td>
+          <td>KYR</td>
+          <td>703</td>
+          <td>113</td>
+          <td>KG</td>
+          <td>917</td>
+          <td>KG</td>
+          <td>KGZ</td>
+          <td>417</td>
+          <td>417</td>
+          <td>KGZ</td>
+          <td>.*kyrgyz.*</td>
+          <td>Asia</td>
+          <td>Central Asia</td>
+        </tr>
+        <tr id="LC133" class="line">
+          <td class="blob-line-nums csv-row-num">
+            <span id="L133">133</span>
+          </td>
+          <td>Lao People&#39;S Democratic Republic</td>
+          <td>LAO</td>
+          <td>812</td>
+          <td>120</td>
+          <td>LA</td>
+          <td>544</td>
+          <td>LA</td>
+          <td>LAO</td>
+          <td>418</td>
+          <td>418</td>
+          <td>LAO</td>
+          <td>.*lao.*</td>
+          <td>Asia</td>
+          <td>South-Eastern Asia</td>
+        </tr>
+        <tr id="LC134" class="line">
+          <td class="blob-line-nums csv-row-num">
+            <span id="L134">134</span>
+          </td>
+          <td>Latvia</td>
+          <td>LAT</td>
+          <td>367</td>
+          <td>119</td>
+          <td>LG</td>
+          <td>941</td>
+          <td>LV</td>
+          <td>LVA</td>
+          <td>428</td>
+          <td>428</td>
+          <td>LVA</td>
+          <td>.*latvia.*</td>
+          <td>Europe</td>
+          <td>Northern Europe</td>
+        </tr>
+        <tr id="LC135" class="line">
+          <td class="blob-line-nums csv-row-num">
+            <span id="L135">135</span>
+          </td>
+          <td>Lebanon</td>
+          <td>LEB</td>
+          <td>660</td>
+          <td>121</td>
+          <td>LE</td>
+          <td>446</td>
+          <td>LB</td>
+          <td>LBN</td>
+          <td>422</td>
+          <td>422</td>
+          <td>LBN</td>
+          <td>.*lebanon.*</td>
+          <td>Asia</td>
+          <td>Western Asia</td>
+        </tr>
+        <tr id="LC136" class="line">
+          <td class="blob-line-nums csv-row-num">
+            <span id="L136">136</span>
+          </td>
+          <td>Lesotho</td>
+          <td>LES</td>
+          <td>570</td>
+          <td>122</td>
+          <td>LT</td>
+          <td>666</td>
+          <td>LS</td>
+          <td>LSO</td>
+          <td>426</td>
+          <td>426</td>
+          <td>LSO</td>
+          <td>.*lesotho.*</td>
+          <td>Africa</td>
+          <td>Southern Africa</td>
+        </tr>
+        <tr id="LC137" class="line">
+          <td class="blob-line-nums csv-row-num">
+            <span id="L137">137</span>
+          </td>
+          <td>Liberia</td>
+          <td>LBR</td>
+          <td>450</td>
+          <td>123</td>
+          <td>LI</td>
+          <td>668</td>
+          <td>LR</td>
+          <td>LBR</td>
+          <td>430</td>
+          <td>430</td>
+          <td>LBR</td>
+          <td>.*liberia.*</td>
+          <td>Africa</td>
+          <td>Western Africa</td>
+        </tr>
+        <tr id="LC138" class="line">
+          <td class="blob-line-nums csv-row-num">
+            <span id="L138">138</span>
+          </td>
+          <td>Libyan Arab Jamahiriya</td>
+          <td>LIB</td>
+          <td>620</td>
+          <td>124</td>
+          <td>LY</td>
+          <td>672</td>
+          <td>LY</td>
+          <td>LBY</td>
+          <td>434</td>
+          <td>434</td>
+          <td>LBY</td>
+          <td>.*libya.*</td>
+          <td>Africa</td>
+          <td>Northern Africa</td>
+        </tr>
+        <tr id="LC139" class="line">
+          <td class="blob-line-nums csv-row-num">
+            <span id="L139">139</span>
+          </td>
+          <td>Liechtenstein</td>
+          <td>LIE</td>
+          <td>223</td>
+          <td></td>
+          <td>LS</td>
+          <td></td>
+          <td>LI</td>
+          <td>LIE</td>
+          <td>438</td>
+          <td>438</td>
+          <td>LIE</td>
+          <td>.*liecht.*stein.*</td>
+          <td>Europe</td>
+          <td>Western Europe</td>
+        </tr>
+        <tr id="LC140" class="line">
+          <td class="blob-line-nums csv-row-num">
+            <span id="L140">140</span>
+          </td>
+          <td>Lithuania</td>
+          <td>LIT</td>
+          <td>368</td>
+          <td>126</td>
+          <td>LH</td>
+          <td>946</td>
+          <td>LT</td>
+          <td>LTU</td>
+          <td>440</td>
+          <td>440</td>
+          <td>LTU</td>
+          <td>.*lithuania.*</td>
+          <td>Europe</td>
+          <td>Northern Europe</td>
+        </tr>
+        <tr id="LC141" class="line">
+          <td class="blob-line-nums csv-row-num">
+            <span id="L141">141</span>
+          </td>
+          <td>Luxembourg</td>
+          <td>LUX</td>
+          <td>212</td>
+          <td>256</td>
+          <td>LU</td>
+          <td>137</td>
+          <td>LU</td>
+          <td>LUX</td>
+          <td>442</td>
+          <td>442</td>
+          <td>LUX</td>
+          <td>.*(?!.*belgium)luxembourg(?!.*belgium).*</td>
+          <td>Europe</td>
+          <td>Western Europe</td>
+        </tr>
+        <tr id="LC142" class="line">
+          <td class="blob-line-nums csv-row-num">
+            <span id="L142">142</span>
+          </td>
+          <td>Macao</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>MC</td>
+          <td>546</td>
+          <td>MO</td>
+          <td>MAC</td>
+          <td>446</td>
+          <td>446</td>
+          <td>MAC</td>
+          <td>.*macao.*|.*macau.*</td>
+          <td>Asia</td>
+          <td>Eastern Asia</td>
+        </tr>
+        <tr id="LC143" class="line">
+          <td class="blob-line-nums csv-row-num">
+            <span id="L143">143</span>
+          </td>
+          <td>Macedonia, The Former Yugoslav Republic Of</td>
+          <td>MAC</td>
+          <td>343</td>
+          <td>154</td>
+          <td>MK</td>
+          <td>962</td>
+          <td>MK</td>
+          <td>MKD</td>
+          <td>807</td>
+          <td>807</td>
+          <td>MKD</td>
+          <td>.*macedonia.*</td>
+          <td>Europe</td>
+          <td>Southern Europe</td>
+        </tr>
+        <tr id="LC144" class="line">
+          <td class="blob-line-nums csv-row-num">
+            <span id="L144">144</span>
+          </td>
+          <td>Madagascar</td>
+          <td>MAG</td>
+          <td>580</td>
+          <td>129</td>
+          <td>MA</td>
+          <td>674</td>
+          <td>MG</td>
+          <td>MDG</td>
+          <td>450</td>
+          <td>450</td>
+          <td>MDG</td>
+          <td>.*madagascar.*|.*malagasy.*</td>
+          <td>Africa</td>
+          <td>Eastern Africa</td>
+        </tr>
+        <tr id="LC145" class="line">
+          <td class="blob-line-nums csv-row-num">
+            <span id="L145">145</span>
+          </td>
+          <td>Malawi</td>
+          <td>MAW</td>
+          <td>553</td>
+          <td>130</td>
+          <td>MI</td>
+          <td>676</td>
+          <td>MW</td>
+          <td>MWI</td>
+          <td>454</td>
+          <td>454</td>
+          <td>MWI</td>
+          <td>.*malawi.*</td>
+          <td>Africa</td>
+          <td>Eastern Africa</td>
+        </tr>
+        <tr id="LC146" class="line">
+          <td class="blob-line-nums csv-row-num">
+            <span id="L146">146</span>
+          </td>
+          <td>Malaysia</td>
+          <td>MAL</td>
+          <td>820</td>
+          <td>131</td>
+          <td>MY</td>
+          <td>548</td>
+          <td>MY</td>
+          <td>MYS</td>
+          <td>458</td>
+          <td>458</td>
+          <td>MYS</td>
+          <td>.*malaysia.*</td>
+          <td>Asia</td>
+          <td>South-Eastern Asia</td>
+        </tr>
+        <tr id="LC147" class="line">
+          <td class="blob-line-nums csv-row-num">
+            <span id="L147">147</span>
+          </td>
+          <td>Maldives</td>
+          <td>MAD</td>
+          <td>781</td>
+          <td>132</td>
+          <td>MV</td>
+          <td>556</td>
+          <td>MV</td>
+          <td>MDV</td>
+          <td>462</td>
+          <td>462</td>
+          <td>MDV</td>
+          <td>.*maldive.*</td>
+          <td>Asia</td>
+          <td>Southern Asia</td>
+        </tr>
+        <tr id="LC148" class="line">
+          <td class="blob-line-nums csv-row-num">
+            <span id="L148">148</span>
+          </td>
+          <td>Mali</td>
+          <td>MLI</td>
+          <td>432</td>
+          <td>133</td>
+          <td>ML</td>
+          <td>678</td>
+          <td>ML</td>
+          <td>MLI</td>
+          <td>466</td>
+          <td>466</td>
+          <td>MLI</td>
+          <td>^[^\w]*mali|rep.* mali</td>
+          <td>Africa</td>
+          <td>Western Africa</td>
+        </tr>
+        <tr id="LC149" class="line">
+          <td class="blob-line-nums csv-row-num">
+            <span id="L149">149</span>
+          </td>
+          <td>Malta</td>
+          <td>MLT</td>
+          <td>338</td>
+          <td>134</td>
+          <td>MT</td>
+          <td>181</td>
+          <td>MT</td>
+          <td>MLT</td>
+          <td>470</td>
+          <td>470</td>
+          <td>MLT</td>
+          <td>.*malta.*</td>
+          <td>Europe</td>
+          <td>Southern Europe</td>
+        </tr>
+        <tr id="LC150" class="line">
+          <td class="blob-line-nums csv-row-num">
+            <span id="L150">150</span>
+          </td>
+          <td>Marshall Islands</td>
+          <td>MSI</td>
+          <td>983</td>
+          <td>127</td>
+          <td>RM</td>
+          <td>867</td>
+          <td>MH</td>
+          <td>MHL</td>
+          <td>584</td>
+          <td>584</td>
+          <td>MHL</td>
+          <td>.*marshall.*</td>
+          <td>Oceania</td>
+          <td>Micronesia</td>
+        </tr>
+        <tr id="LC151" class="line">
+          <td class="blob-line-nums csv-row-num">
+            <span id="L151">151</span>
+          </td>
+          <td>Martinique</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>MB</td>
+          <td>349</td>
+          <td>MQ</td>
+          <td>MTQ</td>
+          <td>474</td>
+          <td>474</td>
+          <td>MTQ</td>
+          <td>.*martinique.*</td>
+          <td>Americas</td>
+          <td>Caribbean</td>
+        </tr>
+        <tr id="LC152" class="line">
+          <td class="blob-line-nums csv-row-num">
+            <span id="L152">152</span>
+          </td>
+          <td>Mauritania</td>
+          <td>MAA</td>
+          <td>435</td>
+          <td>136</td>
+          <td>MR</td>
+          <td>682</td>
+          <td>MR</td>
+          <td>MRT</td>
+          <td>478</td>
+          <td>478</td>
+          <td>MRT</td>
+          <td>.*mauritania.*</td>
+          <td>Africa</td>
+          <td>Western Africa</td>
+        </tr>
+        <tr id="LC153" class="line">
+          <td class="blob-line-nums csv-row-num">
+            <span id="L153">153</span>
+          </td>
+          <td>Mauritius</td>
+          <td>MAS</td>
+          <td>590</td>
+          <td>137</td>
+          <td>MP</td>
+          <td>684</td>
+          <td>MU</td>
+          <td>MUS</td>
+          <td>480</td>
+          <td>480</td>
+          <td>MUS</td>
+          <td>.*mauritius.*</td>
+          <td>Africa</td>
+          <td>Eastern Africa</td>
+        </tr>
+        <tr id="LC154" class="line">
+          <td class="blob-line-nums csv-row-num">
+            <span id="L154">154</span>
+          </td>
+          <td>Mayotte</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>YT</td>
+          <td>MYT</td>
+          <td>175</td>
+          <td>175</td>
+          <td>MYT</td>
+          <td>.*mayotte.*</td>
+          <td>Africa</td>
+          <td>Eastern Africa</td>
+        </tr>
+        <tr id="LC155" class="line">
+          <td class="blob-line-nums csv-row-num">
+            <span id="L155">155</span>
+          </td>
+          <td>Mecklenburg Schwerin</td>
+          <td>MEC</td>
+          <td>280</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>.*mecklenbur.*schwerin.*</td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr id="LC156" class="line">
+          <td class="blob-line-nums csv-row-num">
+            <span id="L156">156</span>
+          </td>
+          <td>Mexico</td>
+          <td>MEX</td>
+          <td>70</td>
+          <td>138</td>
+          <td>MX</td>
+          <td>273</td>
+          <td>MX</td>
+          <td>MEX</td>
+          <td>484</td>
+          <td>484</td>
+          <td>MEX</td>
+          <td>.*mexico.*</td>
+          <td>Americas</td>
+          <td>Central America</td>
+        </tr>
+        <tr id="LC157" class="line">
+          <td class="blob-line-nums csv-row-num">
+            <span id="L157">157</span>
+          </td>
+          <td>Micronesia, Federated States Of</td>
+          <td>FSM</td>
+          <td>987</td>
+          <td>145</td>
+          <td>FM</td>
+          <td>868</td>
+          <td>FM</td>
+          <td>FSM</td>
+          <td>583</td>
+          <td>583</td>
+          <td>FSM</td>
+          <td>.*micronesia.*</td>
+          <td>Oceania</td>
+          <td>Micronesia</td>
+        </tr>
+        <tr id="LC158" class="line">
+          <td class="blob-line-nums csv-row-num">
+            <span id="L158">158</span>
+          </td>
+          <td>Modena</td>
+          <td>MOD</td>
+          <td>332</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>.*modena.*</td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr id="LC159" class="line">
+          <td class="blob-line-nums csv-row-num">
+            <span id="L159">159</span>
+          </td>
+          <td>Moldova, Republic Of</td>
+          <td>MLD</td>
+          <td>359</td>
+          <td>146</td>
+          <td>MD</td>
+          <td>921</td>
+          <td>MD</td>
+          <td>MDA</td>
+          <td>498</td>
+          <td>498</td>
+          <td>MDA</td>
+          <td>.*moldova.*</td>
+          <td>Europe</td>
+          <td>Eastern Europe</td>
+        </tr>
+        <tr id="LC160" class="line">
+          <td class="blob-line-nums csv-row-num">
+            <span id="L160">160</span>
+          </td>
+          <td>Monaco</td>
+          <td>MNC</td>
+          <td>221</td>
+          <td>140</td>
+          <td>MN</td>
+          <td></td>
+          <td>MC</td>
+          <td>MCO</td>
+          <td>492</td>
+          <td>492</td>
+          <td>MCO</td>
+          <td>.*monaco.*</td>
+          <td>Europe</td>
+          <td>Western Europe</td>
+        </tr>
+        <tr id="LC161" class="line">
+          <td class="blob-line-nums csv-row-num">
+            <span id="L161">161</span>
+          </td>
+          <td>Mongolia</td>
+          <td>MON</td>
+          <td>712</td>
+          <td>141</td>
+          <td>MG</td>
+          <td>948</td>
+          <td>MN</td>
+          <td>MNG</td>
+          <td>496</td>
+          <td>496</td>
+          <td>MNG</td>
+          <td>.*mongolia.*</td>
+          <td>Asia</td>
+          <td>Eastern Asia</td>
+        </tr>
+        <tr id="LC162" class="line">
+          <td class="blob-line-nums csv-row-num">
+            <span id="L162">162</span>
+          </td>
+          <td>Montenegro</td>
+          <td>MNG</td>
+          <td>341</td>
+          <td>273</td>
+          <td>MJ</td>
+          <td>943</td>
+          <td>ME</td>
+          <td>MNE</td>
+          <td>499</td>
+          <td>499</td>
+          <td>MNE</td>
+          <td>(?&lt;!serbia)montenegro.*</td>
+          <td>Europe</td>
+          <td>Southern Europe</td>
+        </tr>
+        <tr id="LC163" class="line">
+          <td class="blob-line-nums csv-row-num">
+            <span id="L163">163</span>
+          </td>
+          <td>Montserrat</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>MH</td>
+          <td>351</td>
+          <td>MS</td>
+          <td>MSR</td>
+          <td>500</td>
+          <td>500</td>
+          <td>MSR</td>
+          <td>.*montserrat.*</td>
+          <td>Americas</td>
+          <td>Caribbean</td>
+        </tr>
+        <tr id="LC164" class="line">
+          <td class="blob-line-nums csv-row-num">
+            <span id="L164">164</span>
+          </td>
+          <td>Morocco</td>
+          <td>MOR</td>
+          <td>600</td>
+          <td>143</td>
+          <td>MO</td>
+          <td>686</td>
+          <td>MA</td>
+          <td>MAR</td>
+          <td>504</td>
+          <td>504</td>
+          <td>MAR</td>
+          <td>.*morocco.*</td>
+          <td>Africa</td>
+          <td>Northern Africa</td>
+        </tr>
+        <tr id="LC165" class="line">
+          <td class="blob-line-nums csv-row-num">
+            <span id="L165">165</span>
+          </td>
+          <td>Mozambique</td>
+          <td>MZM</td>
+          <td>541</td>
+          <td>144</td>
+          <td>MZ</td>
+          <td>688</td>
+          <td>MZ</td>
+          <td>MOZ</td>
+          <td>508</td>
+          <td>508</td>
+          <td>MOZ</td>
+          <td>.*mozambique.*</td>
+          <td>Africa</td>
+          <td>Eastern Africa</td>
+        </tr>
+        <tr id="LC166" class="line">
+          <td class="blob-line-nums csv-row-num">
+            <span id="L166">166</span>
+          </td>
+          <td>Myanmar</td>
+          <td>MYA</td>
+          <td>775</td>
+          <td>28</td>
+          <td>BM</td>
+          <td>518</td>
+          <td>MM</td>
+          <td>MMR</td>
+          <td>104</td>
+          <td>104</td>
+          <td>MMR</td>
+          <td>.*myanmar.*|.*burma.*</td>
+          <td>Asia</td>
+          <td>South-Eastern Asia</td>
+        </tr>
+        <tr id="LC167" class="line">
+          <td class="blob-line-nums csv-row-num">
+            <span id="L167">167</span>
+          </td>
+          <td>Namibia</td>
+          <td>NAM</td>
+          <td>565</td>
+          <td>147</td>
+          <td>WA</td>
+          <td>728</td>
+          <td>NA</td>
+          <td>NAM</td>
+          <td>516</td>
+          <td>516</td>
+          <td>NAM</td>
+          <td>.*namibia.*</td>
+          <td>Africa</td>
+          <td>Southern Africa</td>
+        </tr>
+        <tr id="LC168" class="line">
+          <td class="blob-line-nums csv-row-num">
+            <span id="L168">168</span>
+          </td>
+          <td>Nauru</td>
+          <td>NAU</td>
+          <td>970</td>
+          <td>148</td>
+          <td>NR</td>
+          <td>836</td>
+          <td>NR</td>
+          <td>NRU</td>
+          <td>520</td>
+          <td>520</td>
+          <td>NRU</td>
+          <td>.*nauru.*</td>
+          <td>Oceania</td>
+          <td>Micronesia</td>
+        </tr>
+        <tr id="LC169" class="line">
+          <td class="blob-line-nums csv-row-num">
+            <span id="L169">169</span>
+          </td>
+          <td>Nepal</td>
+          <td>NEP</td>
+          <td>790</td>
+          <td>149</td>
+          <td>NP</td>
+          <td>558</td>
+          <td>NP</td>
+          <td>NPL</td>
+          <td>524</td>
+          <td>524</td>
+          <td>NPL</td>
+          <td>.*nepal.*</td>
+          <td>Asia</td>
+          <td>Southern Asia</td>
+        </tr>
+        <tr id="LC170" class="line">
+          <td class="blob-line-nums csv-row-num">
+            <span id="L170">170</span>
+          </td>
+          <td>Netherlands</td>
+          <td>NTH</td>
+          <td>210</td>
+          <td>150</td>
+          <td>NL</td>
+          <td>138</td>
+          <td>NL</td>
+          <td>NLD</td>
+          <td>528</td>
+          <td>528</td>
+          <td>NLD</td>
+          <td>.*netherlands(?!.*ant).*</td>
+          <td>Europe</td>
+          <td>Western Europe</td>
+        </tr>
+        <tr id="LC171" class="line">
+          <td class="blob-line-nums csv-row-num">
+            <span id="L171">171</span>
+          </td>
+          <td>Netherlands Antilles</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>353</td>
+          <td>AN</td>
+          <td>ANT</td>
+          <td>530</td>
+          <td></td>
+          <td>ANT</td>
+          <td>.*netherl.*ant.*</td>
+          <td>Americas</td>
+          <td>Caribbean</td>
+        </tr>
+        <tr id="LC172" class="line">
+          <td class="blob-line-nums csv-row-num">
+            <span id="L172">172</span>
+          </td>
+          <td>New Caledonia</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>NC</td>
+          <td>839</td>
+          <td>NC</td>
+          <td>NCL</td>
+          <td>540</td>
+          <td>540</td>
+          <td>NCL</td>
+          <td>.*new caledonia.*</td>
+          <td>Oceania</td>
+          <td>Melanesia</td>
+        </tr>
+        <tr id="LC173" class="line">
+          <td class="blob-line-nums csv-row-num">
+            <span id="L173">173</span>
+          </td>
+          <td>New Zealand</td>
+          <td>NEW</td>
+          <td>920</td>
+          <td>156</td>
+          <td>NZ</td>
+          <td>196</td>
+          <td>NZ</td>
+          <td>NZL</td>
+          <td>554</td>
+          <td>554</td>
+          <td>NZL</td>
+          <td>.*new zealand.*</td>
+          <td>Oceania</td>
+          <td>Australia and New Zealand</td>
+        </tr>
+        <tr id="LC174" class="line">
+          <td class="blob-line-nums csv-row-num">
+            <span id="L174">174</span>
+          </td>
+          <td>Nicaragua</td>
+          <td>NIC</td>
+          <td>93</td>
+          <td>157</td>
+          <td>NU</td>
+          <td>278</td>
+          <td>NI</td>
+          <td>NIC</td>
+          <td>558</td>
+          <td>558</td>
+          <td>NIC</td>
+          <td>.*nicaragua.*</td>
+          <td>Americas</td>
+          <td>Central America</td>
+        </tr>
+        <tr id="LC175" class="line">
+          <td class="blob-line-nums csv-row-num">
+            <span id="L175">175</span>
+          </td>
+          <td>Niger</td>
+          <td>NIR</td>
+          <td>436</td>
+          <td>158</td>
+          <td>NG</td>
+          <td>692</td>
+          <td>NE</td>
+          <td>NER</td>
+          <td>562</td>
+          <td>562</td>
+          <td>NER</td>
+          <td>.*niger(?!ia).*</td>
+          <td>Africa</td>
+          <td>Western Africa</td>
+        </tr>
+        <tr id="LC176" class="line">
+          <td class="blob-line-nums csv-row-num">
+            <span id="L176">176</span>
+          </td>
+          <td>Nigeria</td>
+          <td>NIG</td>
+          <td>475</td>
+          <td>159</td>
+          <td>NI</td>
+          <td>694</td>
+          <td>NG</td>
+          <td>NGA</td>
+          <td>566</td>
+          <td>566</td>
+          <td>NGA</td>
+          <td>.*nigeria.*</td>
+          <td>Africa</td>
+          <td>Western Africa</td>
+        </tr>
+        <tr id="LC177" class="line">
+          <td class="blob-line-nums csv-row-num">
+            <span id="L177">177</span>
+          </td>
+          <td>Niue</td>
+          <td></td>
+          <td></td>
+          <td>160</td>
+          <td>NE</td>
+          <td></td>
+          <td>NU</td>
+          <td>NIU</td>
+          <td>570</td>
+          <td>570</td>
+          <td>NIU</td>
+          <td>.*niue.*</td>
+          <td>Oceania</td>
+          <td>Polynesia</td>
+        </tr>
+        <tr id="LC178" class="line">
+          <td class="blob-line-nums csv-row-num">
+            <span id="L178">178</span>
+          </td>
+          <td>Norfolk Island</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>NF</td>
+          <td>NFK</td>
+          <td>574</td>
+          <td>574</td>
+          <td>NFK</td>
+          <td>.*norfolk.*</td>
+          <td>Oceania</td>
+          <td>Australia and New Zealand</td>
+        </tr>
+        <tr id="LC179" class="line">
+          <td class="blob-line-nums csv-row-num">
+            <span id="L179">179</span>
+          </td>
+          <td>Northern Mariana Islands</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>CQ</td>
+          <td></td>
+          <td>MP</td>
+          <td>MNP</td>
+          <td>580</td>
+          <td>580</td>
+          <td>MNP</td>
+          <td>.*mariana.*</td>
+          <td>Oceania</td>
+          <td>Micronesia</td>
+        </tr>
+        <tr id="LC180" class="line">
+          <td class="blob-line-nums csv-row-num">
+            <span id="L180">180</span>
+          </td>
+          <td>Norway</td>
+          <td>NOR</td>
+          <td>385</td>
+          <td>162</td>
+          <td>NO</td>
+          <td>142</td>
+          <td>NO</td>
+          <td>NOR</td>
+          <td>578</td>
+          <td>578</td>
+          <td>NOR</td>
+          <td>.*norway.*</td>
+          <td>Europe</td>
+          <td>Northern Europe</td>
+        </tr>
+        <tr id="LC181" class="line">
+          <td class="blob-line-nums csv-row-num">
+            <span id="L181">181</span>
+          </td>
+          <td>Oman</td>
+          <td>OMA</td>
+          <td>698</td>
+          <td>221</td>
+          <td>MU</td>
+          <td>449</td>
+          <td>OM</td>
+          <td>OMN</td>
+          <td>512</td>
+          <td>512</td>
+          <td>OMN</td>
+          <td>^[^r]*oman.*</td>
+          <td>Asia</td>
+          <td>Western Asia</td>
+        </tr>
+        <tr id="LC182" class="line">
+          <td class="blob-line-nums csv-row-num">
+            <span id="L182">182</span>
+          </td>
+          <td>Pakistan</td>
+          <td>PAK</td>
+          <td>770</td>
+          <td>165</td>
+          <td>PK</td>
+          <td>564</td>
+          <td>PK</td>
+          <td>PAK</td>
+          <td>586</td>
+          <td>586</td>
+          <td>PAK</td>
+          <td>.*pakistan.*</td>
+          <td>Asia</td>
+          <td>Southern Asia</td>
+        </tr>
+        <tr id="LC183" class="line">
+          <td class="blob-line-nums csv-row-num">
+            <span id="L183">183</span>
+          </td>
+          <td>Palau</td>
+          <td>PAL</td>
+          <td>986</td>
+          <td>180</td>
+          <td>PS</td>
+          <td>565</td>
+          <td>PW</td>
+          <td>PLW</td>
+          <td>585</td>
+          <td>585</td>
+          <td>PLW</td>
+          <td>.*palau.*</td>
+          <td>Oceania</td>
+          <td>Micronesia</td>
+        </tr>
+        <tr id="LC184" class="line">
+          <td class="blob-line-nums csv-row-num">
+            <span id="L184">184</span>
+          </td>
+          <td>Palestinian Territory, Occupied</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>487</td>
+          <td>PS</td>
+          <td>PSE</td>
+          <td>275</td>
+          <td>275</td>
+          <td>WBG</td>
+          <td>.*palestin.*|.*gaza.*|.*west.bank.*</td>
+          <td>Asia</td>
+          <td>Western Asia</td>
+        </tr>
+        <tr id="LC185" class="line">
+          <td class="blob-line-nums csv-row-num">
+            <span id="L185">185</span>
+          </td>
+          <td>Panama</td>
+          <td>PAN</td>
+          <td>95</td>
+          <td>166</td>
+          <td>PM</td>
+          <td>283</td>
+          <td>PA</td>
+          <td>PAN</td>
+          <td>591</td>
+          <td>591</td>
+          <td>PAN</td>
+          <td>.*panama.*</td>
+          <td>Americas</td>
+          <td>Central America</td>
+        </tr>
+        <tr id="LC186" class="line">
+          <td class="blob-line-nums csv-row-num">
+            <span id="L186">186</span>
+          </td>
+          <td>Papua New Guinea</td>
+          <td>PNG</td>
+          <td>910</td>
+          <td>168</td>
+          <td>PP</td>
+          <td>853</td>
+          <td>PG</td>
+          <td>PNG</td>
+          <td>598</td>
+          <td>598</td>
+          <td>PNG</td>
+          <td>.*papua.new.g.*|.*p.*n.*guin.*</td>
+          <td>Oceania</td>
+          <td>Melanesia</td>
+        </tr>
+        <tr id="LC187" class="line">
+          <td class="blob-line-nums csv-row-num">
+            <span id="L187">187</span>
+          </td>
+          <td>Paraguay</td>
+          <td>PAR</td>
+          <td>150</td>
+          <td>169</td>
+          <td>PA</td>
+          <td>288</td>
+          <td>PY</td>
+          <td>PRY</td>
+          <td>600</td>
+          <td>600</td>
+          <td>PRY</td>
+          <td>.*paraguay.*</td>
+          <td>Americas</td>
+          <td>South America</td>
+        </tr>
+        <tr id="LC188" class="line">
+          <td class="blob-line-nums csv-row-num">
+            <span id="L188">188</span>
+          </td>
+          <td>Parma</td>
+          <td>PMA</td>
+          <td>335</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>.*parma.*</td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr id="LC189" class="line">
+          <td class="blob-line-nums csv-row-num">
+            <span id="L189">189</span>
+          </td>
+          <td>Peru</td>
+          <td>PER</td>
+          <td>135</td>
+          <td>170</td>
+          <td>PE</td>
+          <td>293</td>
+          <td>PE</td>
+          <td>PER</td>
+          <td>604</td>
+          <td>604</td>
+          <td>PER</td>
+          <td>.*peru.*</td>
+          <td>Americas</td>
+          <td>South America</td>
+        </tr>
+        <tr id="LC190" class="line">
+          <td class="blob-line-nums csv-row-num">
+            <span id="L190">190</span>
+          </td>
+          <td>Philippines</td>
+          <td>PHI</td>
+          <td>840</td>
+          <td>171</td>
+          <td>RP</td>
+          <td>566</td>
+          <td>PH</td>
+          <td>PHL</td>
+          <td>608</td>
+          <td>608</td>
+          <td>PHL</td>
+          <td>.*philippines.*</td>
+          <td>Asia</td>
+          <td>South-Eastern Asia</td>
+        </tr>
+        <tr id="LC191" class="line">
+          <td class="blob-line-nums csv-row-num">
+            <span id="L191">191</span>
+          </td>
+          <td>Pitcairn</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>PN</td>
+          <td>PCN</td>
+          <td>612</td>
+          <td>612</td>
+          <td>PCN</td>
+          <td>.*pitcairn.*</td>
+          <td>Oceania</td>
+          <td>Polynesia</td>
+        </tr>
+        <tr id="LC192" class="line">
+          <td class="blob-line-nums csv-row-num">
+            <span id="L192">192</span>
+          </td>
+          <td>Poland</td>
+          <td>POL</td>
+          <td>290</td>
+          <td>173</td>
+          <td>PL</td>
+          <td>964</td>
+          <td>PL</td>
+          <td>POL</td>
+          <td>616</td>
+          <td>616</td>
+          <td>POL</td>
+          <td>.*poland.*</td>
+          <td>Europe</td>
+          <td>Eastern Europe</td>
+        </tr>
+        <tr id="LC193" class="line">
+          <td class="blob-line-nums csv-row-num">
+            <span id="L193">193</span>
+          </td>
+          <td>Portugal</td>
+          <td>POR</td>
+          <td>235</td>
+          <td>174</td>
+          <td>PO</td>
+          <td>182</td>
+          <td>PT</td>
+          <td>PRT</td>
+          <td>620</td>
+          <td>620</td>
+          <td>PRT</td>
+          <td>.*portugal.*</td>
+          <td>Europe</td>
+          <td>Southern Europe</td>
+        </tr>
+        <tr id="LC194" class="line">
+          <td class="blob-line-nums csv-row-num">
+            <span id="L194">194</span>
+          </td>
+          <td>Puerto Rico</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>RQ</td>
+          <td></td>
+          <td>PR</td>
+          <td>PRI</td>
+          <td>630</td>
+          <td>630</td>
+          <td>PRI</td>
+          <td>.*puerto rico.*</td>
+          <td>Americas</td>
+          <td>Caribbean</td>
+        </tr>
+        <tr id="LC195" class="line">
+          <td class="blob-line-nums csv-row-num">
+            <span id="L195">195</span>
+          </td>
+          <td>Qatar</td>
+          <td>QAT</td>
+          <td>694</td>
+          <td>179</td>
+          <td>QA</td>
+          <td>453</td>
+          <td>QA</td>
+          <td>QAT</td>
+          <td>634</td>
+          <td>634</td>
+          <td>QAT</td>
+          <td>.*qatar.*</td>
+          <td>Asia</td>
+          <td>Western Asia</td>
+        </tr>
+        <tr id="LC196" class="line">
+          <td class="blob-line-nums csv-row-num">
+            <span id="L196">196</span>
+          </td>
+          <td>Republic of Vietnam</td>
+          <td>RVN</td>
+          <td>817</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr id="LC197" class="line">
+          <td class="blob-line-nums csv-row-num">
+            <span id="L197">197</span>
+          </td>
+          <td>Reunion</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>RE</td>
+          <td>696</td>
+          <td>RE</td>
+          <td>REU</td>
+          <td>638</td>
+          <td>638</td>
+          <td>REU</td>
+          <td>r.*union.*</td>
+          <td>Africa</td>
+          <td>Eastern Africa</td>
+        </tr>
+        <tr id="LC198" class="line">
+          <td class="blob-line-nums csv-row-num">
+            <span id="L198">198</span>
+          </td>
+          <td>Romania</td>
+          <td>ROM</td>
+          <td>360</td>
+          <td>183</td>
+          <td>RO</td>
+          <td>968</td>
+          <td>RO</td>
+          <td>ROU</td>
+          <td>642</td>
+          <td>642</td>
+          <td>ROM</td>
+          <td>.*romania.*</td>
+          <td>Europe</td>
+          <td>Eastern Europe</td>
+        </tr>
+        <tr id="LC199" class="line">
+          <td class="blob-line-nums csv-row-num">
+            <span id="L199">199</span>
+          </td>
+          <td>Russian Federation</td>
+          <td>RUS</td>
+          <td>365</td>
+          <td>185</td>
+          <td>RS</td>
+          <td>922</td>
+          <td>RU</td>
+          <td>RUS</td>
+          <td>643</td>
+          <td>643</td>
+          <td>RUS</td>
+          <td>.*russia.*|.*ussr.*|.*soviet.*|.*u\.s\.s\.r\..*</td>
+          <td>Europe</td>
+          <td>Eastern Europe</td>
+        </tr>
+        <tr id="LC200" class="line">
+          <td class="blob-line-nums csv-row-num">
+            <span id="L200">200</span>
+          </td>
+          <td>Rwanda</td>
+          <td>RWA</td>
+          <td>517</td>
+          <td>184</td>
+          <td>RW</td>
+          <td>714</td>
+          <td>RW</td>
+          <td>RWA</td>
+          <td>646</td>
+          <td>646</td>
+          <td>RWA</td>
+          <td>.*rwanda.*</td>
+          <td>Africa</td>
+          <td>Eastern Africa</td>
+        </tr>
+        <tr id="LC201" class="line">
+          <td class="blob-line-nums csv-row-num">
+            <span id="L201">201</span>
+          </td>
+          <td>Saint Barthelemy</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>BL</td>
+          <td>BLM</td>
+          <td>652</td>
+          <td>652</td>
+          <td>BLM</td>
+          <td>.*barth.*lemy.*</td>
+          <td>Americas</td>
+          <td>Caribbean</td>
+        </tr>
+        <tr id="LC202" class="line">
+          <td class="blob-line-nums csv-row-num">
+            <span id="L202">202</span>
+          </td>
+          <td>Saint Helena</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>SH</td>
+          <td>856</td>
+          <td>SH</td>
+          <td>SHN</td>
+          <td>654</td>
+          <td>654</td>
+          <td>SHN</td>
+          <td>.*helena.*</td>
+          <td>Africa</td>
+          <td>Western Africa</td>
+        </tr>
+        <tr id="LC203" class="line">
+          <td class="blob-line-nums csv-row-num">
+            <span id="L203">203</span>
+          </td>
+          <td>Saint Kitts And Nevis</td>
+          <td>SKN</td>
+          <td>60</td>
+          <td>188</td>
+          <td>SC</td>
+          <td>361</td>
+          <td>KN</td>
+          <td>KNA</td>
+          <td>659</td>
+          <td>659</td>
+          <td>KNA</td>
+          <td>.*kitt.*nev.*|.*christopher.*nev.*</td>
+          <td>Americas</td>
+          <td>Caribbean</td>
+        </tr>
+        <tr id="LC204" class="line">
+          <td class="blob-line-nums csv-row-num">
+            <span id="L204">204</span>
+          </td>
+          <td>Saint Lucia</td>
+          <td>SLU</td>
+          <td>56</td>
+          <td>189</td>
+          <td>ST</td>
+          <td>362</td>
+          <td>LC</td>
+          <td>LCA</td>
+          <td>662</td>
+          <td>662</td>
+          <td>LCA</td>
+          <td>.*lucia.*</td>
+          <td>Americas</td>
+          <td>Caribbean</td>
+        </tr>
+        <tr id="LC205" class="line">
+          <td class="blob-line-nums csv-row-num">
+            <span id="L205">205</span>
+          </td>
+          <td>Saint Martin</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>352</td>
+          <td>MF</td>
+          <td>MAF</td>
+          <td>663</td>
+          <td>663</td>
+          <td>MAF</td>
+          <td>.*sa.*martin.*|.*st.*martin.*</td>
+          <td>Americas</td>
+          <td>Caribbean</td>
+        </tr>
+        <tr id="LC206" class="line">
+          <td class="blob-line-nums csv-row-num">
+            <span id="L206">206</span>
+          </td>
+          <td>Saint Pierre And Miquelon</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>363</td>
+          <td>PM</td>
+          <td>SPM</td>
+          <td>666</td>
+          <td>666</td>
+          <td>SPM</td>
+          <td>.*miquelon.*</td>
+          <td>Americas</td>
+          <td>Northern America </td>
+        </tr>
+        <tr id="LC207" class="line">
+          <td class="blob-line-nums csv-row-num">
+            <span id="L207">207</span>
+          </td>
+          <td>Saint Vincent And The Grenadines</td>
+          <td>SVG</td>
+          <td>57</td>
+          <td>191</td>
+          <td>VC</td>
+          <td>364</td>
+          <td>VC</td>
+          <td>VCT</td>
+          <td>670</td>
+          <td>670</td>
+          <td>VCT</td>
+          <td>.*vincent.*</td>
+          <td>Americas</td>
+          <td>Caribbean</td>
+        </tr>
+        <tr id="LC208" class="line">
+          <td class="blob-line-nums csv-row-num">
+            <span id="L208">208</span>
+          </td>
+          <td>Samoa</td>
+          <td>WSM</td>
+          <td>990</td>
+          <td>244</td>
+          <td>SM</td>
+          <td>862</td>
+          <td>WS</td>
+          <td>WSM</td>
+          <td>882</td>
+          <td>882</td>
+          <td>WSM</td>
+          <td>^samoa$|.*w.*samoa.*</td>
+          <td>Oceania</td>
+          <td>Polynesia</td>
+        </tr>
+        <tr id="LC209" class="line">
+          <td class="blob-line-nums csv-row-num">
+            <span id="L209">209</span>
+          </td>
+          <td>San Marino</td>
+          <td>SNM</td>
+          <td>331</td>
+          <td>192</td>
+          <td>SM</td>
+          <td>135</td>
+          <td>SM</td>
+          <td>SMR</td>
+          <td>674</td>
+          <td>674</td>
+          <td>SMR</td>
+          <td>.*san.marino.*</td>
+          <td>Europe</td>
+          <td>Southern Europe</td>
+        </tr>
+        <tr id="LC210" class="line">
+          <td class="blob-line-nums csv-row-num">
+            <span id="L210">210</span>
+          </td>
+          <td>Sao Tome And Principe</td>
+          <td>STP</td>
+          <td>403</td>
+          <td>193</td>
+          <td>TP</td>
+          <td>716</td>
+          <td>ST</td>
+          <td>STP</td>
+          <td>678</td>
+          <td>678</td>
+          <td>STP</td>
+          <td>.*s.*to.*principe.*|.*sao.*tome.*</td>
+          <td>Africa</td>
+          <td>Middle Africa</td>
+        </tr>
+        <tr id="LC211" class="line">
+          <td class="blob-line-nums csv-row-num">
+            <span id="L211">211</span>
+          </td>
+          <td>Saudi Arabia</td>
+          <td>SAU</td>
+          <td>670</td>
+          <td>194</td>
+          <td>SA</td>
+          <td>456</td>
+          <td>SA</td>
+          <td>SAU</td>
+          <td>682</td>
+          <td>682</td>
+          <td>SAU</td>
+          <td>.*sa.*arabia.*</td>
+          <td>Asia</td>
+          <td>Western Asia</td>
+        </tr>
+        <tr id="LC212" class="line">
+          <td class="blob-line-nums csv-row-num">
+            <span id="L212">212</span>
+          </td>
+          <td>Saxony</td>
+          <td>SAX</td>
+          <td>269</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>.*saxony.*</td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr id="LC213" class="line">
+          <td class="blob-line-nums csv-row-num">
+            <span id="L213">213</span>
+          </td>
+          <td>Senegal</td>
+          <td>SEN</td>
+          <td>433</td>
+          <td>195</td>
+          <td>SG</td>
+          <td>722</td>
+          <td>SN</td>
+          <td>SEN</td>
+          <td>686</td>
+          <td>686</td>
+          <td>SEN</td>
+          <td>.*senegal.*</td>
+          <td>Africa</td>
+          <td>Western Africa</td>
+        </tr>
+        <tr id="LC214" class="line">
+          <td class="blob-line-nums csv-row-num">
+            <span id="L214">214</span>
+          </td>
+          <td>Serbia</td>
+          <td></td>
+          <td></td>
+          <td>272</td>
+          <td>RI</td>
+          <td>942</td>
+          <td>RS</td>
+          <td>SRB</td>
+          <td>688</td>
+          <td>688</td>
+          <td>SRB</td>
+          <td>.*serbia.*</td>
+          <td>Europe</td>
+          <td>Southern Europe</td>
+        </tr>
+        <tr id="LC215" class="line">
+          <td class="blob-line-nums csv-row-num">
+            <span id="L215">215</span>
+          </td>
+          <td>Seychelles</td>
+          <td>SEY</td>
+          <td>591</td>
+          <td>196</td>
+          <td>SE</td>
+          <td>718</td>
+          <td>SC</td>
+          <td>SYC</td>
+          <td>690</td>
+          <td>690</td>
+          <td>SYC</td>
+          <td>.*seychell.*</td>
+          <td>Africa</td>
+          <td>Eastern Africa</td>
+        </tr>
+        <tr id="LC216" class="line">
+          <td class="blob-line-nums csv-row-num">
+            <span id="L216">216</span>
+          </td>
+          <td>Sierra Leone</td>
+          <td>SIE</td>
+          <td>451</td>
+          <td>197</td>
+          <td>SL</td>
+          <td>724</td>
+          <td>SL</td>
+          <td>SLE</td>
+          <td>694</td>
+          <td>694</td>
+          <td>SLE</td>
+          <td>.*sierra.*</td>
+          <td>Africa</td>
+          <td>Western Africa</td>
+        </tr>
+        <tr id="LC217" class="line">
+          <td class="blob-line-nums csv-row-num">
+            <span id="L217">217</span>
+          </td>
+          <td>Singapore</td>
+          <td>SIN</td>
+          <td>830</td>
+          <td></td>
+          <td>SN</td>
+          <td>576</td>
+          <td>SG</td>
+          <td>SGP</td>
+          <td>702</td>
+          <td>702</td>
+          <td>SGP</td>
+          <td>.*singapore.*</td>
+          <td>Asia</td>
+          <td>South-Eastern Asia</td>
+        </tr>
+        <tr id="LC218" class="line">
+          <td class="blob-line-nums csv-row-num">
+            <span id="L218">218</span>
+          </td>
+          <td>Sint Maarten</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>NN</td>
+          <td>352</td>
+          <td>SX</td>
+          <td>SXM</td>
+          <td>534</td>
+          <td>534</td>
+          <td>SXM</td>
+          <td>.*sint.*maarten.*|.*saint.*maarten.*|.*st.*maarten.*</td>
+          <td>Americas</td>
+          <td>Caribbean</td>
+        </tr>
+        <tr id="LC219" class="line">
+          <td class="blob-line-nums csv-row-num">
+            <span id="L219">219</span>
+          </td>
+          <td>Slovakia</td>
+          <td>SLO</td>
+          <td>317</td>
+          <td>199</td>
+          <td>LO</td>
+          <td>936</td>
+          <td>SK</td>
+          <td>SVK</td>
+          <td>703</td>
+          <td>703</td>
+          <td>SVK</td>
+          <td>^slovak.*</td>
+          <td>Europe</td>
+          <td>Eastern Europe</td>
+        </tr>
+        <tr id="LC220" class="line">
+          <td class="blob-line-nums csv-row-num">
+            <span id="L220">220</span>
+          </td>
+          <td>Slovenia</td>
+          <td>SLV</td>
+          <td>349</td>
+          <td>198</td>
+          <td>SI</td>
+          <td>961</td>
+          <td>SI</td>
+          <td>SVN</td>
+          <td>705</td>
+          <td>705</td>
+          <td>SVN</td>
+          <td>.*slovenia.*</td>
+          <td>Europe</td>
+          <td>Southern Europe</td>
+        </tr>
+        <tr id="LC221" class="line">
+          <td class="blob-line-nums csv-row-num">
+            <span id="L221">221</span>
+          </td>
+          <td>Solomon Islands</td>
+          <td>SOL</td>
+          <td>940</td>
+          <td>25</td>
+          <td>BP</td>
+          <td>813</td>
+          <td>SB</td>
+          <td>SLB</td>
+          <td>90</td>
+          <td>90</td>
+          <td>SLB</td>
+          <td>.*solomon.*</td>
+          <td>Oceania</td>
+          <td>Melanesia</td>
+        </tr>
+        <tr id="LC222" class="line">
+          <td class="blob-line-nums csv-row-num">
+            <span id="L222">222</span>
+          </td>
+          <td>Somalia</td>
+          <td>SOM</td>
+          <td>520</td>
+          <td>201</td>
+          <td>SO</td>
+          <td>726</td>
+          <td>SO</td>
+          <td>SOM</td>
+          <td>706</td>
+          <td>706</td>
+          <td>SOM</td>
+          <td>.*somali.*</td>
+          <td>Africa</td>
+          <td>Eastern Africa</td>
+        </tr>
+        <tr id="LC223" class="line">
+          <td class="blob-line-nums csv-row-num">
+            <span id="L223">223</span>
+          </td>
+          <td>South Africa</td>
+          <td>SAF</td>
+          <td>560</td>
+          <td>202</td>
+          <td>SF</td>
+          <td>199</td>
+          <td>ZA</td>
+          <td>ZAF</td>
+          <td>710</td>
+          <td>710</td>
+          <td>ZAF</td>
+          <td>so.*africa.*|.*s.*africa.*</td>
+          <td>Africa</td>
+          <td>Southern Africa</td>
+        </tr>
+        <tr id="LC224" class="line">
+          <td class="blob-line-nums csv-row-num">
+            <span id="L224">224</span>
+          </td>
+          <td>South Georgia And The South Sandwich Islands</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>GS</td>
+          <td>SGS</td>
+          <td>239</td>
+          <td></td>
+          <td>SGS</td>
+          <td>.*south.georgia.*|.*sandwich.*</td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr id="LC225" class="line">
+          <td class="blob-line-nums csv-row-num">
+            <span id="L225">225</span>
+          </td>
+          <td>South Sudan</td>
+          <td>SSD</td>
+          <td>626</td>
+          <td></td>
+          <td>OD</td>
+          <td>733</td>
+          <td>SS</td>
+          <td>SSD</td>
+          <td>728</td>
+          <td>728</td>
+          <td>SSD</td>
+          <td>.*s.*sudan.*|.*sudan.*s.*</td>
+          <td>Africa</td>
+          <td>Northern Africa</td>
+        </tr>
+        <tr id="LC226" class="line">
+          <td class="blob-line-nums csv-row-num">
+            <span id="L226">226</span>
+          </td>
+          <td>Spain</td>
+          <td>SPN</td>
+          <td>230</td>
+          <td>203</td>
+          <td>SP</td>
+          <td>184</td>
+          <td>ES</td>
+          <td>ESP</td>
+          <td>724</td>
+          <td>724</td>
+          <td>ESP</td>
+          <td>.*spain.*</td>
+          <td>Europe</td>
+          <td>Southern Europe</td>
+        </tr>
+        <tr id="LC227" class="line">
+          <td class="blob-line-nums csv-row-num">
+            <span id="L227">227</span>
+          </td>
+          <td>Sri Lanka</td>
+          <td>SRI</td>
+          <td>780</td>
+          <td>38</td>
+          <td>CE</td>
+          <td>524</td>
+          <td>LK</td>
+          <td>LKA</td>
+          <td>144</td>
+          <td>144</td>
+          <td>LKA</td>
+          <td>.*sri.*lanka.*|.*ceylon.*</td>
+          <td>Asia</td>
+          <td>Southern Asia</td>
+        </tr>
+        <tr id="LC228" class="line">
+          <td class="blob-line-nums csv-row-num">
+            <span id="L228">228</span>
+          </td>
+          <td>Sudan</td>
+          <td>SUD</td>
+          <td>625</td>
+          <td>206</td>
+          <td>SU</td>
+          <td>732</td>
+          <td>SD</td>
+          <td>SDN</td>
+          <td>736</td>
+          <td>729</td>
+          <td>SDN</td>
+          <td>(?!so.*)sudan(?!.*s).*</td>
+          <td>Africa</td>
+          <td>Northern Africa</td>
+        </tr>
+        <tr id="LC229" class="line">
+          <td class="blob-line-nums csv-row-num">
+            <span id="L229">229</span>
+          </td>
+          <td>Suriname</td>
+          <td>SUR</td>
+          <td>115</td>
+          <td>207</td>
+          <td>NS</td>
+          <td>366</td>
+          <td>SR</td>
+          <td>SUR</td>
+          <td>740</td>
+          <td>740</td>
+          <td>SUR</td>
+          <td>.*surinam.*</td>
+          <td>Americas</td>
+          <td>South America</td>
+        </tr>
+        <tr id="LC230" class="line">
+          <td class="blob-line-nums csv-row-num">
+            <span id="L230">230</span>
+          </td>
+          <td>Svalbard And Jan Mayen</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>SV</td>
+          <td></td>
+          <td>SJ</td>
+          <td>SJM</td>
+          <td>744</td>
+          <td>744</td>
+          <td>SJM</td>
+          <td>.*svalbard.*</td>
+          <td>Europe</td>
+          <td>Northern Europe</td>
+        </tr>
+        <tr id="LC231" class="line">
+          <td class="blob-line-nums csv-row-num">
+            <span id="L231">231</span>
+          </td>
+          <td>Swaziland</td>
+          <td>SWA</td>
+          <td>572</td>
+          <td>209</td>
+          <td>WZ</td>
+          <td>734</td>
+          <td>SZ</td>
+          <td>SWZ</td>
+          <td>748</td>
+          <td>748</td>
+          <td>SWZ</td>
+          <td>.*swaziland.*</td>
+          <td>Africa</td>
+          <td>Southern Africa</td>
+        </tr>
+        <tr id="LC232" class="line">
+          <td class="blob-line-nums csv-row-num">
+            <span id="L232">232</span>
+          </td>
+          <td>Sweden</td>
+          <td>SWD</td>
+          <td>380</td>
+          <td>210</td>
+          <td>SW</td>
+          <td>144</td>
+          <td>SE</td>
+          <td>SWE</td>
+          <td>752</td>
+          <td>752</td>
+          <td>SWE</td>
+          <td>.*sweden.*</td>
+          <td>Europe</td>
+          <td>Northern Europe</td>
+        </tr>
+        <tr id="LC233" class="line">
+          <td class="blob-line-nums csv-row-num">
+            <span id="L233">233</span>
+          </td>
+          <td>Switzerland</td>
+          <td>SWZ</td>
+          <td>225</td>
+          <td>211</td>
+          <td>SZ</td>
+          <td>146</td>
+          <td>CH</td>
+          <td>CHE</td>
+          <td>756</td>
+          <td>756</td>
+          <td>CHE</td>
+          <td>.*switzerland.*</td>
+          <td>Europe</td>
+          <td>Western Europe</td>
+        </tr>
+        <tr id="LC234" class="line">
+          <td class="blob-line-nums csv-row-num">
+            <span id="L234">234</span>
+          </td>
+          <td>Syrian Arab Republic</td>
+          <td>SYR</td>
+          <td>652</td>
+          <td>212</td>
+          <td>SY</td>
+          <td>463</td>
+          <td>SY</td>
+          <td>SYR</td>
+          <td>760</td>
+          <td>760</td>
+          <td>SYR</td>
+          <td>.*syria.*</td>
+          <td>Asia</td>
+          <td>Western Asia</td>
+        </tr>
+        <tr id="LC235" class="line">
+          <td class="blob-line-nums csv-row-num">
+            <span id="L235">235</span>
+          </td>
+          <td>Taiwan, Province Of China</td>
+          <td>TAW</td>
+          <td>713</td>
+          <td></td>
+          <td>TW</td>
+          <td>528</td>
+          <td>TW</td>
+          <td>TWN</td>
+          <td>158</td>
+          <td></td>
+          <td>TWN</td>
+          <td>.*taiwan.*</td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr id="LC236" class="line">
+          <td class="blob-line-nums csv-row-num">
+            <span id="L236">236</span>
+          </td>
+          <td>Tajikistan</td>
+          <td>TAJ</td>
+          <td>702</td>
+          <td>208</td>
+          <td>TI</td>
+          <td>923</td>
+          <td>TJ</td>
+          <td>TJK</td>
+          <td>762</td>
+          <td>762</td>
+          <td>TJK</td>
+          <td>.*tajikistan.*</td>
+          <td>Asia</td>
+          <td>Central Asia</td>
+        </tr>
+        <tr id="LC237" class="line">
+          <td class="blob-line-nums csv-row-num">
+            <span id="L237">237</span>
+          </td>
+          <td>Tanzania, United Republic Of</td>
+          <td>TAZ</td>
+          <td>510</td>
+          <td>215</td>
+          <td>TZ</td>
+          <td>738</td>
+          <td>TZ</td>
+          <td>TZA</td>
+          <td>834</td>
+          <td>834</td>
+          <td>TZA</td>
+          <td>.*tanzania.*</td>
+          <td>Africa</td>
+          <td>Eastern Africa</td>
+        </tr>
+        <tr id="LC238" class="line">
+          <td class="blob-line-nums csv-row-num">
+            <span id="L238">238</span>
+          </td>
+          <td>Thailand</td>
+          <td>THI</td>
+          <td>800</td>
+          <td>216</td>
+          <td>TH</td>
+          <td>578</td>
+          <td>TH</td>
+          <td>THA</td>
+          <td>764</td>
+          <td>764</td>
+          <td>THA</td>
+          <td>.*thailand.*|.*siam.*|.*taipei.*</td>
+          <td>Asia</td>
+          <td>South-Eastern Asia</td>
+        </tr>
+        <tr id="LC239" class="line">
+          <td class="blob-line-nums csv-row-num">
+            <span id="L239">239</span>
+          </td>
+          <td>Timor-Leste</td>
+          <td>ETM</td>
+          <td>860</td>
+          <td>176</td>
+          <td>TT</td>
+          <td>537</td>
+          <td>TL</td>
+          <td>TLS</td>
+          <td>626</td>
+          <td>626</td>
+          <td>TMP</td>
+          <td>t.*leste.*|.*east.*timor.*|.*timor.*east.*</td>
+          <td>Asia</td>
+          <td>South-Eastern Asia</td>
+        </tr>
+        <tr id="LC240" class="line">
+          <td class="blob-line-nums csv-row-num">
+            <span id="L240">240</span>
+          </td>
+          <td>Togo</td>
+          <td>TOG</td>
+          <td>461</td>
+          <td>217</td>
+          <td>TO</td>
+          <td>742</td>
+          <td>TG</td>
+          <td>TGO</td>
+          <td>768</td>
+          <td>768</td>
+          <td>TGO</td>
+          <td>.*togo.*</td>
+          <td>Africa</td>
+          <td>Western Africa</td>
+        </tr>
+        <tr id="LC241" class="line">
+          <td class="blob-line-nums csv-row-num">
+            <span id="L241">241</span>
+          </td>
+          <td>Tokelau</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>TL</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>772</td>
+          <td>772</td>
+          <td>TKL</td>
+          <td>.*tokelau.*</td>
+          <td>Oceania</td>
+          <td>Polynesia</td>
+        </tr>
+        <tr id="LC242" class="line">
+          <td class="blob-line-nums csv-row-num">
+            <span id="L242">242</span>
+          </td>
+          <td>Tonga</td>
+          <td>TON</td>
+          <td>955</td>
+          <td>219</td>
+          <td>TN</td>
+          <td>866</td>
+          <td>TO</td>
+          <td>TON</td>
+          <td>776</td>
+          <td>776</td>
+          <td>TON</td>
+          <td>.*tonga.*</td>
+          <td>Oceania</td>
+          <td>Polynesia</td>
+        </tr>
+        <tr id="LC243" class="line">
+          <td class="blob-line-nums csv-row-num">
+            <span id="L243">243</span>
+          </td>
+          <td>Trinidad And Tobago</td>
+          <td>TRI</td>
+          <td>52</td>
+          <td>220</td>
+          <td>TD</td>
+          <td>369</td>
+          <td>TT</td>
+          <td>TTO</td>
+          <td>780</td>
+          <td>780</td>
+          <td>TTO</td>
+          <td>.*trinidad.*|.*tobago.*</td>
+          <td>Americas</td>
+          <td>Caribbean</td>
+        </tr>
+        <tr id="LC244" class="line">
+          <td class="blob-line-nums csv-row-num">
+            <span id="L244">244</span>
+          </td>
+          <td>Tunisia</td>
+          <td>TUN</td>
+          <td>616</td>
+          <td>222</td>
+          <td>TS</td>
+          <td>744</td>
+          <td>TN</td>
+          <td>TUN</td>
+          <td>788</td>
+          <td>788</td>
+          <td>TUN</td>
+          <td>.*tunisia.*</td>
+          <td>Africa</td>
+          <td>Northern Africa</td>
+        </tr>
+        <tr id="LC245" class="line">
+          <td class="blob-line-nums csv-row-num">
+            <span id="L245">245</span>
+          </td>
+          <td>Turkey</td>
+          <td>TUR</td>
+          <td>640</td>
+          <td>223</td>
+          <td>TU</td>
+          <td>186</td>
+          <td>TR</td>
+          <td>TUR</td>
+          <td>792</td>
+          <td>792</td>
+          <td>TUR</td>
+          <td>.*turkey.*</td>
+          <td>Asia</td>
+          <td>Western Asia</td>
+        </tr>
+        <tr id="LC246" class="line">
+          <td class="blob-line-nums csv-row-num">
+            <span id="L246">246</span>
+          </td>
+          <td>Turkmenistan</td>
+          <td>TKM</td>
+          <td>701</td>
+          <td>213</td>
+          <td>TX</td>
+          <td>925</td>
+          <td>TM</td>
+          <td>TKM</td>
+          <td>795</td>
+          <td>795</td>
+          <td>TKM</td>
+          <td>.*turkmen.*stan.*</td>
+          <td>Asia</td>
+          <td>Central Asia</td>
+        </tr>
+        <tr id="LC247" class="line">
+          <td class="blob-line-nums csv-row-num">
+            <span id="L247">247</span>
+          </td>
+          <td>Turks And Caicos Islands</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>TC</td>
+          <td>TCA</td>
+          <td>796</td>
+          <td>796</td>
+          <td>TCA</td>
+          <td>.*turks.*</td>
+          <td>Americas</td>
+          <td>Caribbean</td>
+        </tr>
+        <tr id="LC248" class="line">
+          <td class="blob-line-nums csv-row-num">
+            <span id="L248">248</span>
+          </td>
+          <td>Tuscany</td>
+          <td>TUS</td>
+          <td>337</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>.*tuscany.*</td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr id="LC249" class="line">
+          <td class="blob-line-nums csv-row-num">
+            <span id="L249">249</span>
+          </td>
+          <td>Tuvalu</td>
+          <td>TUV</td>
+          <td>947</td>
+          <td>227</td>
+          <td>TV</td>
+          <td></td>
+          <td>TV</td>
+          <td>TUV</td>
+          <td>798</td>
+          <td>798</td>
+          <td>TUV</td>
+          <td>.*tuvalu.*</td>
+          <td>Oceania</td>
+          <td>Polynesia</td>
+        </tr>
+        <tr id="LC250" class="line">
+          <td class="blob-line-nums csv-row-num">
+            <span id="L250">250</span>
+          </td>
+          <td>Two Sicilies</td>
+          <td>SIC</td>
+          <td>329</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>.*two.*sicilies.*</td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr id="LC251" class="line">
+          <td class="blob-line-nums csv-row-num">
+            <span id="L251">251</span>
+          </td>
+          <td>Uganda</td>
+          <td>UGA</td>
+          <td>500</td>
+          <td>226</td>
+          <td>UG</td>
+          <td>746</td>
+          <td>UG</td>
+          <td>UGA</td>
+          <td>800</td>
+          <td>800</td>
+          <td>UGA</td>
+          <td>.*uganda.*</td>
+          <td>Africa</td>
+          <td>Eastern Africa</td>
+        </tr>
+        <tr id="LC252" class="line">
+          <td class="blob-line-nums csv-row-num">
+            <span id="L252">252</span>
+          </td>
+          <td>Ukraine</td>
+          <td>UKR</td>
+          <td>369</td>
+          <td>230</td>
+          <td>UP</td>
+          <td>926</td>
+          <td>UA</td>
+          <td>UKR</td>
+          <td>804</td>
+          <td>804</td>
+          <td>UKR</td>
+          <td>.*ukraine.*</td>
+          <td>Europe</td>
+          <td>Eastern Europe</td>
+        </tr>
+        <tr id="LC253" class="line">
+          <td class="blob-line-nums csv-row-num">
+            <span id="L253">253</span>
+          </td>
+          <td>United Arab Emirates</td>
+          <td>UAE</td>
+          <td>696</td>
+          <td>225</td>
+          <td>AE</td>
+          <td>466</td>
+          <td>AE</td>
+          <td>ARE</td>
+          <td>784</td>
+          <td>784</td>
+          <td>ARE</td>
+          <td>.*u.*a.*emirates.*</td>
+          <td>Asia</td>
+          <td>Western Asia</td>
+        </tr>
+        <tr id="LC254" class="line">
+          <td class="blob-line-nums csv-row-num">
+            <span id="L254">254</span>
+          </td>
+          <td>United Kingdom</td>
+          <td>UKG</td>
+          <td>200</td>
+          <td>229</td>
+          <td>UK</td>
+          <td>112</td>
+          <td>GB</td>
+          <td>GBR</td>
+          <td>826</td>
+          <td>826</td>
+          <td>GBR</td>
+          <td>.*united kingdom.*|.*britain.*|uk$</td>
+          <td>Europe</td>
+          <td>Northern Europe</td>
+        </tr>
+        <tr id="LC255" class="line">
+          <td class="blob-line-nums csv-row-num">
+            <span id="L255">255</span>
+          </td>
+          <td>United States</td>
+          <td>USA</td>
+          <td>2</td>
+          <td>231</td>
+          <td>US</td>
+          <td>111</td>
+          <td>US</td>
+          <td>USA</td>
+          <td>840</td>
+          <td>840</td>
+          <td>USA</td>
+          <td>^united.*states.*|^USA$|^US$</td>
+          <td>Americas</td>
+          <td>Northern America </td>
+        </tr>
+        <tr id="LC256" class="line">
+          <td class="blob-line-nums csv-row-num">
+            <span id="L256">256</span>
+          </td>
+          <td>United States Minor Outlying Islands</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>UM</td>
+          <td>UMI</td>
+          <td>581</td>
+          <td></td>
+          <td>UMI</td>
+          <td>united states minor outlying islands</td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr id="LC257" class="line">
+          <td class="blob-line-nums csv-row-num">
+            <span id="L257">257</span>
+          </td>
+          <td>Uruguay</td>
+          <td>URU</td>
+          <td>165</td>
+          <td>234</td>
+          <td>UY</td>
+          <td>298</td>
+          <td>UY</td>
+          <td>URY</td>
+          <td>858</td>
+          <td>858</td>
+          <td>URY</td>
+          <td>.*uruguay.*</td>
+          <td>Americas</td>
+          <td>South America</td>
+        </tr>
+        <tr id="LC258" class="line">
+          <td class="blob-line-nums csv-row-num">
+            <span id="L258">258</span>
+          </td>
+          <td>Uzbekistan</td>
+          <td>UZB</td>
+          <td>704</td>
+          <td>235</td>
+          <td>UZ</td>
+          <td>927</td>
+          <td>UZ</td>
+          <td>UZB</td>
+          <td>860</td>
+          <td>860</td>
+          <td>UZB</td>
+          <td>.*uzbekistan.*</td>
+          <td>Asia</td>
+          <td>Central Asia</td>
+        </tr>
+        <tr id="LC259" class="line">
+          <td class="blob-line-nums csv-row-num">
+            <span id="L259">259</span>
+          </td>
+          <td>Vanuatu</td>
+          <td>VAN</td>
+          <td>935</td>
+          <td>155</td>
+          <td>NH</td>
+          <td>846</td>
+          <td>VU</td>
+          <td>VUT</td>
+          <td>548</td>
+          <td>548</td>
+          <td>VUT</td>
+          <td>.*vanuatu.*</td>
+          <td>Oceania</td>
+          <td>Melanesia</td>
+        </tr>
+        <tr id="LC260" class="line">
+          <td class="blob-line-nums csv-row-num">
+            <span id="L260">260</span>
+          </td>
+          <td>Venezuela, Bolivarian Republic Of</td>
+          <td>VEN</td>
+          <td>101</td>
+          <td>236</td>
+          <td>VE</td>
+          <td>299</td>
+          <td>VE</td>
+          <td>VEN</td>
+          <td>862</td>
+          <td>862</td>
+          <td>VEN</td>
+          <td>.*venezuela.*</td>
+          <td>Americas</td>
+          <td>South America</td>
+        </tr>
+        <tr id="LC261" class="line">
+          <td class="blob-line-nums csv-row-num">
+            <span id="L261">261</span>
+          </td>
+          <td>Vietnam</td>
+          <td>DRV</td>
+          <td>816</td>
+          <td>237</td>
+          <td>VM</td>
+          <td>582</td>
+          <td>VN</td>
+          <td>VNM</td>
+          <td>704</td>
+          <td>704</td>
+          <td>VNM</td>
+          <td>.*viet.*nam.*</td>
+          <td>Asia</td>
+          <td>South-Eastern Asia</td>
+        </tr>
+        <tr id="LC262" class="line">
+          <td class="blob-line-nums csv-row-num">
+            <span id="L262">262</span>
+          </td>
+          <td>Virgin Islands, British</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>VI</td>
+          <td></td>
+          <td>VG</td>
+          <td>VGB</td>
+          <td>92</td>
+          <td>92</td>
+          <td>VGB</td>
+          <td>.*virgin.*brit.*|.*brit.*virgin.*|.*virgin.*u.*k.*|.*u.*k.*virgin.*</td>
+          <td>Americas</td>
+          <td>Caribbean</td>
+        </tr>
+        <tr id="LC263" class="line">
+          <td class="blob-line-nums csv-row-num">
+            <span id="L263">263</span>
+          </td>
+          <td>Virgin Islands, U.S.</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>VQ</td>
+          <td></td>
+          <td>VI</td>
+          <td>VIR</td>
+          <td>850</td>
+          <td>850</td>
+          <td>VIR</td>
+          <td>.*virgin.*us.*|.*virgin.*u\.s\..*|.*us.*virgin.*</td>
+          <td>Americas</td>
+          <td>Caribbean</td>
+        </tr>
+        <tr id="LC264" class="line">
+          <td class="blob-line-nums csv-row-num">
+            <span id="L264">264</span>
+          </td>
+          <td>Wallis And Futuna</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>WS</td>
+          <td></td>
+          <td>WF</td>
+          <td>WLF</td>
+          <td>876</td>
+          <td>876</td>
+          <td>WLF</td>
+          <td>.*futuna.*|.*wallis.*</td>
+          <td>Oceania</td>
+          <td>Polynesia</td>
+        </tr>
+        <tr id="LC265" class="line">
+          <td class="blob-line-nums csv-row-num">
+            <span id="L265">265</span>
+          </td>
+          <td>Western Sahara</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>WI</td>
+          <td></td>
+          <td>EH</td>
+          <td>ESH</td>
+          <td>732</td>
+          <td>732</td>
+          <td>ESH</td>
+          <td>.*sahara.*</td>
+          <td>Africa</td>
+          <td>Northern Africa</td>
+        </tr>
+        <tr id="LC266" class="line">
+          <td class="blob-line-nums csv-row-num">
+            <span id="L266">266</span>
+          </td>
+          <td>Wuerttemburg</td>
+          <td>WRT</td>
+          <td>271</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>.*wuerttemburg.*</td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr id="LC267" class="line">
+          <td class="blob-line-nums csv-row-num">
+            <span id="L267">267</span>
+          </td>
+          <td>Yemen</td>
+          <td>YEM</td>
+          <td>679</td>
+          <td>249</td>
+          <td>YM</td>
+          <td>474</td>
+          <td>YE</td>
+          <td>YEM</td>
+          <td>887</td>
+          <td>887</td>
+          <td>YEM</td>
+          <td>.*yemen.*</td>
+          <td>Asia</td>
+          <td>Western Asia</td>
+        </tr>
+        <tr id="LC268" class="line">
+          <td class="blob-line-nums csv-row-num">
+            <span id="L268">268</span>
+          </td>
+          <td>Yemen Arab Republic</td>
+          <td>YAR</td>
+          <td>678</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr id="LC269" class="line">
+          <td class="blob-line-nums csv-row-num">
+            <span id="L269">269</span>
+          </td>
+          <td>Yemen People&#39;s Republic</td>
+          <td>YPR</td>
+          <td>680</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>.*yemen.*pdr.*</td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr id="LC270" class="line">
+          <td class="blob-line-nums csv-row-num">
+            <span id="L270">270</span>
+          </td>
+          <td>Yugoslavia</td>
+          <td>YUG</td>
+          <td>345</td>
+          <td></td>
+          <td></td>
+          <td>188</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>.*yugoslavia.*|.*yugoslavia.*</td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr id="LC271" class="line">
+          <td class="blob-line-nums csv-row-num">
+            <span id="L271">271</span>
+          </td>
+          <td>Zambia</td>
+          <td>ZAM</td>
+          <td>551</td>
+          <td>251</td>
+          <td>ZA</td>
+          <td>754</td>
+          <td>ZM</td>
+          <td>ZMB</td>
+          <td>894</td>
+          <td>894</td>
+          <td>ZMB</td>
+          <td>.*zambia.*</td>
+          <td>Africa</td>
+          <td>Eastern Africa</td>
+        </tr>
+        <tr id="LC272" class="line">
+          <td class="blob-line-nums csv-row-num">
+            <span id="L272">272</span>
+          </td>
+          <td>Zanzibar</td>
+          <td>ZAN</td>
+          <td>511</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>.*zanzibar.*</td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr id="LC273" class="line">
+          <td class="blob-line-nums csv-row-num">
+            <span id="L273">273</span>
+          </td>
+          <td>Zimbabwe</td>
+          <td>ZIM</td>
+          <td>552</td>
+          <td>181</td>
+          <td>ZI</td>
+          <td>698</td>
+          <td>ZW</td>
+          <td>ZWE</td>
+          <td>716</td>
+          <td>716</td>
+          <td>ZWE</td>
+          <td>.*zimbabwe.*</td>
+          <td>Africa</td>
+          <td>Eastern Africa</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+  </div>
+
+  </div>
+</div>
+
+<a href="#jump-to-line" rel="facebox[.linejump]" data-hotkey="l" class="js-jump-to-line" style="display:none">Jump to Line</a>
+<div id="jump-to-line" style="display:none">
+  <form accept-charset="UTF-8" class="js-jump-to-line-form">
+    <input class="linejump-input js-jump-to-line-field" type="text" placeholder="Jump to line&hellip;" autofocus>
+    <button type="submit" class="button">Go</button>
+  </form>
+</div>
+
+        </div>
+
+      </div><!-- /.repo-container -->
+      <div class="modal-backdrop"></div>
+    </div><!-- /.container -->
+  </div><!-- /.site -->
+
+
+    </div><!-- /.wrapper -->
+
+      <div class="container">
+  <div class="site-footer">
+    <ul class="site-footer-links right">
+      <li><a href="https://status.github.com/">Status</a></li>
+      <li><a href="http://developer.github.com">API</a></li>
+      <li><a href="http://training.github.com">Training</a></li>
+      <li><a href="http://shop.github.com">Shop</a></li>
+      <li><a href="/blog">Blog</a></li>
+      <li><a href="/about">About</a></li>
+
+    </ul>
+
+    <a href="/">
+      <span class="mega-octicon octicon-mark-github" title="GitHub"></span>
+    </a>
+
+    <ul class="site-footer-links">
+      <li>&copy; 2014 <span title="0.05595s from github-fe133-cp1-prd.iad.github.net">GitHub</span>, Inc.</li>
+        <li><a href="/site/terms">Terms</a></li>
+        <li><a href="/site/privacy">Privacy</a></li>
+        <li><a href="/security">Security</a></li>
+        <li><a href="/contact">Contact</a></li>
+    </ul>
+  </div><!-- /.site-footer -->
+</div><!-- /.container -->
+
+
+    <div class="fullscreen-overlay js-fullscreen-overlay" id="fullscreen_overlay">
+  <div class="fullscreen-container js-fullscreen-container">
+    <div class="textarea-wrap">
+      <textarea name="fullscreen-contents" id="fullscreen-contents" class="js-fullscreen-contents" placeholder="" data-suggester="fullscreen_suggester"></textarea>
+    </div>
+  </div>
+  <div class="fullscreen-sidebar">
+    <a href="#" class="exit-fullscreen js-exit-fullscreen tooltipped tooltipped-w" aria-label="Exit Zen Mode">
+      <span class="mega-octicon octicon-screen-normal"></span>
+    </a>
+    <a href="#" class="theme-switcher js-theme-switcher tooltipped tooltipped-w"
+      aria-label="Switch themes">
+      <span class="octicon octicon-color-mode"></span>
+    </a>
+  </div>
+</div>
+
+
+
+    <div id="ajax-error-message" class="flash flash-error">
+      <span class="octicon octicon-alert"></span>
+      <a href="#" class="octicon octicon-remove-close close js-ajax-error-dismiss"></a>
+      Something went wrong with that request. Please try again.
+    </div>
+
+  </body>
+</html>
+
