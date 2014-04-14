@@ -13,7 +13,3 @@ Version: 0.17
 URL: http://www.umich.edu/~varel,
     https://github.com/vincentarelbundock/countrycode
 Date: 2013-??-??
-Collate:
-    'countrycode.R'
-    'countrycode-package.R'
-    'countrycode_data.R'
