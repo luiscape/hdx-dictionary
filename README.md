@@ -16,8 +16,7 @@ Use warn=TRUE to print out a list of source elements for which no match was foun
 
 Installation
 ------------
-
-From the R console, type ``install.packages("countrycode")``
+You'll need the `devtools` package to install this dictionary. To install it type: `install.packages('devtools')`. Then `library(devtools)`. Finally, from the R console, type ``devtools::install_github("luiscape/hdx-dictionary")`` .
 
 Examples
 --------
