@@ -17,6 +17,8 @@ fromytoTRUE <- function(df) {
 # Converting the 'y' and 'n' in TRUE/FALSE.
 hdx.master.dic <- fromytoTRUE(hdx.master.dic)
 
+# Loading field operations.
+
 # Merging
 hdx.dictionary <- merge(hdx.master.dic, countrycode_data, by = 'iso3c')
 colnames(hdx.dictionary)[2] <- 'country.name.package.temp'

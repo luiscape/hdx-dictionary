@@ -27,6 +27,8 @@
 #'   \item Office.code: the code of the office in which this country falls into
 #'   \item Office.name..en.: The name of the office in English.
 #'   \item HumanitarianResponse.link: link to the humanitarian response website.
+#'   \item Field.Operation: If the country has an OCHA field operation.
+#'   \item Field.Operation.Status: Status of the country OCHA field operation.
 #'  
 #' }
 #' 
