@@ -1,22 +1,8 @@
-Contributions
+HDX Dictionary
 =============
 
-If you would like to improve the country code dictionary, please modify the file held in this other repository: https://github.com/vincentarelbundock/pycountrycode/tree/master/countrycode/data
+This is the dictionary of country names used by the Humanitarian Data Exchange project (hdx.rwlabs.org). The original code was cloned from https://github.com/vincentarelbundock/countrycode. The original package can be installed using `install.packages('countrycode')` from [countrycode CRAN page](http://cran.r-project.org/web/packages/countrycode/index.html). 
 
-R: countrycode
-==============
-
-`countrycode` standardizes country names, converts them into one of seven coding schemes, assigns region descriptors, and generates empty dyadic or country-year dataframes from the coding schemes. Scroll down for more details or visit the [countrycode CRAN page](http://cran.r-project.org/web/packages/countrycode/index.html)
-
-Problem
--------
-
-Different data sources use different coding schemes to represent countries (e.g. CoW or ISO). This poses two main problems: (1) some of these coding schemes are less than intuitive, and (2) merging these data requires converting from one coding scheme to another, or from long country names to a coding scheme.
-
-Solution
---------
-
-The countrycode function can convert to and from 7 different country coding schemes. It uses regular expressions to convert long country names (e.g. Sri Lanka) into any of those coding schemes, or into standardized country names (official short English). It can create new variables with the name of the continent and/or region to which each country belongs.
 
 Supported country codes
 -----------------------
@@ -30,8 +16,7 @@ Use warn=TRUE to print out a list of source elements for which no match was foun
 
 Installation
 ------------
-
-From the R console, type ``install.packages("countrycode")``
+You'll need the `devtools` package to install this dictionary. To install it type: `install.packages('devtools')`. Then `library(devtools)`. Finally, from the R console, type ``devtools::install_github("luiscape/hdx-dictionary")`` .
 
 Examples
 --------
