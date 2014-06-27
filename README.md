@@ -1,7 +1,9 @@
 HDX Dictionary
 =============
 
-This is the dictionary of country names used by the Humanitarian Data Exchange project (hdx.rwlabs.org). The original code was cloned from https://github.com/vincentarelbundock/countrycode. The original package can be installed using `install.packages('countrycode')` from [countrycode CRAN page](http://cran.r-project.org/web/packages/countrycode/index.html). 
+This is the dictionary of country names used by the Humanitarian Data Exchange project (hdx.rwlabs.org). The original code was cloned from https://github.com/vincentarelbundock/countrycode. The original package can be installed using `install.packages('countrycode')` from [countrycode CRAN page](http://cran.r-project.org/web/packages/countrycode/index.html).
+
+The original list has been expanded to **197** countries and has been modified to match the requirements of the [Humanitarian Exchange Project](http://docs.hdx.rwlabs.org).
 
 
 Supported country codes
